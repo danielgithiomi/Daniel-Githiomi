@@ -10,7 +10,7 @@ Created By: Daniel Githiomi
 
 ## PREVIEW
 
-  ![Portfolio Preview](Assets/Images/Screenshot.png)
+![Portfolio Preview](Assets/Images/Screenshot.png)
 
 ## SYSTEM REQUIREMENTS
 
