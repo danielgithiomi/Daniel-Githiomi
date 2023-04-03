@@ -1,0 +1,56 @@
+/* Charset */
+@charset 'UTF-8';
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Poppins:wght@400;700&display=swap');
+
+/* CSS Variables */
+:root {
+    --dark-bakground-color: #1E1E1E;
+    --white-text: white;
+    --theme-color: #f18f01;
+    --dull-white-text: #999;
+    --warning-red: red;
+    --transparent: transparent;
+    --linear-bg: linear-gradient(var(--main-background-color), rgb(20, 30, 20));
+    --disabled: grey;
+    --dark-grey: #333;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar{
+    width: .4rem;
+}
+
+::-webkit-scrollbar-track{
+    margin-block: .3rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--theme-color);
+    opacity: .2;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    opacity: 1;
+}
+
+/* Common CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    transition: all .2s ease-in-out;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
