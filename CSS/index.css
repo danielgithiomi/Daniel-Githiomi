@@ -6,10 +6,11 @@
 
 /* CSS Variables */
 :root {
-    
+
     --background-color: #fdfdfd;
     --main-color: #f18f01;
     --text-color: black;
+    --hover-text-color: white;
     --dull-text-color: #555;
     --dark-grey: #222;
     --shadow-color: rgba(241, 143, 1, 0.5);
@@ -17,28 +18,28 @@
     --background-gradient: linear-gradient(var(--main-color), rgb(0, 0, 0));
 }
 
-.dark_mode{
+.dark_mode {
     --bakground-color: #1E1E1E;
     --text-color: white;
     --dull-text-color: #999;
 }
 
 /* Custom Scrollbar */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: .4rem;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     margin-block: .3rem;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: var(--main-color);
     opacity: .5;
     border-radius: 100vw;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
     opacity: 1;
 }
 
@@ -62,26 +63,27 @@ a {
 }
 
 /* Page CSS */
-html{
+html {
     overflow-x: hidden;
 }
 
-body{
+body {
     background: var(--background-color);
     color: var(--black);
 }
 
-section{
-    padding: 3rem 10%;
+section {
+    padding: 10rem 10%;
     min-height: 100vh;
 }
 
-.symbol{
+.symbol, .emphasis {
     color: var(--main-color);
+    font-weight: 600;
 }
 
 /* Header Section */
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -93,7 +95,7 @@ section{
     z-index: 10;
 }
 
-.logo{
+.logo {
     font-size: 3rem;
     text-transform: uppercase;
     color: var(--main-color);
@@ -102,40 +104,41 @@ section{
     margin-right: auto;
 }
 
-.logo:hover{
+.logo:hover {
     /* transform: translateY(-3px); */
     transform: scale(1.05);
     color: var(--main-color);
 }
 
-.navigation{
+.navigation {
     display: flex;
     flex-wrap: wrap;
 }
 
-.navigation li{
+.navigation li {
     position: relative;
-    margin: .5rem 1.5rem;
+    margin: .5rem 1.2rem;
     padding: .3rem;
     transition: transform .4s ease-in-out;
 }
 
-.navigation li a{
+.navigation li a {
     color: var(--text-color);
-    font-size: 1.05rem;
+    font-size: 1.03rem;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.navigation li:hover a, 
-.navigation li a.active{
+.navigation li:hover a,
+.navigation li a.active {
     color: var(--main-color);
 }
 
-.navigation li:hover{
+.navigation li:hover {
     transform: translateY(-2px);
 }
 
-.navigation li a.active::after{
+.navigation li a.active::after {
     content: '';
     position: absolute;
     left: 0;
@@ -145,26 +148,103 @@ section{
     background-color: var(--main-color);
 }
 
-/* Hamburger */
-
-/* Theme Switcher */
-.theme-switcher{
+/* Theme Switcher & Hamburger */
+.theme-switcher {
     margin: 0 1rem;
 }
 
-.theme-switcher i{
-    font-size: 1.5rem;
+.theme-switcher i,
+.hamburger i {
+    font-size: 2rem;
     color: var(--main-color);
     cursor: pointer;
     transition: all .3s ease-in;
 }
 
-.theme-switcher i:hover{
+.theme-switcher i:hover,
+.hamburger i:hover {
     transform: scale(.9);
 }
 
 /* Home Section */
-.name{
-    font-size: 4rem;
+#home{
+    display: flex;
+    align-items: center;
+}
+
+.home-content{
+    max-width: 55%;
+}
+
+.name {
+    font-size: 5.5rem;
+    letter-spacing: .5rem;
     text-transform: uppercase;
+    font-family: 'Love Ya Like A Sister', sans-serif;
+    color: var(--main-color);
+}
+
+.bio{
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+/* Socials Section */
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials .bx{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin: 1rem .5rem;
+    --fa-beat-fade-opacity: 0.5;
+    --fa-beat-fade-scale: 1.05;
+    --fa-animation-duration: 2s;
+}
+
+.socials .bx:hover{
+    transform: scale(1.1);
+    --fa-beat-fade-opacity: 1;
+    --fa-beat-fade-scale: 1;
+    --fa-animation-duration: 0;
+    transition: all .3s ease-in-out;
+}
+
+/* CV Section */
+.cv-download{
+    position: relative;
+    border: 1px solid var(--main-color);
+    border-radius: 1rem 0 1rem 0;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin: 2rem 1rem;
+    padding: .5rem 1rem;
+    overflow: hidden;
+}
+
+.cv-download a{
+    color: var(--black);
+    letter-spacing: 1px;
+}
+
+.cv-download::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #f18f01;
+    transition: width .5s ease-in-out;
+    z-index: -1;
+}
+
+.cv-download:hover a{
+    color: var(--hover-text-color);
+}
+
+.cv-download:hover::before{
+    width: 100%;
 }
