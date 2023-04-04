@@ -26,11 +26,12 @@
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: .4rem;
+    width: .5rem;
 }
 
 ::-webkit-scrollbar-track {
-    margin-block: .3rem;
+    background-color: var(--background-color);
+    margin-block: .1rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -73,7 +74,7 @@ body {
 }
 
 section {
-    padding: 10rem 10%;
+    padding: 8rem 10%;
     min-height: 100vh;
 }
 
@@ -142,7 +143,7 @@ section {
 }
 
 .navigation li a {
-    color: var(--text-color);
+    color: var(--hover-text-color);
     font-size: 1.03rem;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -345,14 +346,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 4rem 0;
-}
-
-.about-image{
+    margin: 4rem 0 0 0;
 }
 
 .about-content{
-    padding: 0rem 5%;
+    padding: 0rem 8%;
 }
 
 .about-content h3{
@@ -362,4 +360,49 @@ section {
 
 .about-content p{
     margin: 2rem auto;
+}
+
+/* Service Section */
+.services-content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem 0;
+    padding: 8rem 0;
+}
+
+.service{
+    border: 1.5px solid var(--main-color);
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    margin: 1rem;
+    text-align: center;
+    transition: all .4s ease-in-out;;
+}
+
+.service:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 10px var(--shadow-color);
+    transform: scale(1.05);
+}
+
+.service i{
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.service-title{
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+.service:hover .service-title{
+    color: var(--main-color);
+}
+
+.service-details{
+    padding: 1rem .5rem;
 }
