@@ -15,7 +15,7 @@
     --dark-grey: #222;
     --shadow-color: rgba(241, 143, 1, 0.5);
     --transparent: transparent;
-    --background-gradient: linear-gradient(var(--main-color), rgb(0, 0, 0));
+    --background-gradient: linear-gradient(rgb(0, 0, 0, .1), var(--main-color));
 }
 
 .dark_mode {
@@ -406,3 +406,82 @@ section {
 .service-details{
     padding: 1rem .5rem;
 }
+
+/* Portfolio Section */
+#portfolio{
+    min-height: 100%;
+}
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 1rem;
+}
+
+.portfolio-project{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.project-overlay{
+    display: none;
+}
+
+.portfolio-project:hover .project-overlay{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--background-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    color: var(--hover-text-color);
+    transition: all .5s ease-in-out;
+}
+
+ .portfolio-project img{
+    width: 100%;
+    height: 100%;
+ }
+
+ .portfolio-project:hover img{
+    transform: scale(1.1);
+    transition: transform .4s ease-in-out;
+}
+
+ .project-overlay h4{
+    padding: 1rem 0;
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+ }
+
+ .project-overlay p{
+    padding: .5rem .5rem;
+ }
+
+ .external-link a{
+    height: 40px;
+    width: 40px;
+    padding: .5rem;
+    background-color: var(--background-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .external-link i{
+    color: var(--main-color);
+ }
