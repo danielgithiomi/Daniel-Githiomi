@@ -6,15 +6,21 @@
 
 /* CSS Variables */
 :root {
-    --dark-bakground-color: #1E1E1E;
-    --white-text: white;
-    --theme-color: #f18f01;
-    --dull-white-text: #999;
-    --warning-red: red;
+    
+    --background-color: #fdfdfd;
+    --main-color: #f18f01;
+    --text-color: black;
+    --dull-text-color: #555;
+    --dark-grey: #222;
+    --shadow-color: rgba(241, 143, 1, 0.5);
     --transparent: transparent;
-    --linear-bg: linear-gradient(var(--main-background-color), rgb(20, 30, 20));
-    --disabled: grey;
-    --dark-grey: #333;
+    --background-gradient: linear-gradient(var(--main-color), rgb(0, 0, 0));
+}
+
+.dark_mode{
+    --bakground-color: #1E1E1E;
+    --text-color: white;
+    --dull-text-color: #999;
 }
 
 /* Custom Scrollbar */
@@ -27,8 +33,8 @@
 }
 
 ::-webkit-scrollbar-thumb{
-    background: var(--theme-color);
-    opacity: .2;
+    background: var(--main-color);
+    opacity: .5;
     border-radius: 100vw;
 }
 
@@ -44,6 +50,7 @@
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     transition: all .2s ease-in-out;
+    outline: none;
 }
 
 li {
@@ -52,5 +59,112 @@ li {
 
 a {
     text-decoration: none;
-    color: var(--white);
+}
+
+/* Page CSS */
+html{
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--background-color);
+    color: var(--black);
+}
+
+section{
+    padding: 3rem 10%;
+    min-height: 100vh;
+}
+
+.symbol{
+    color: var(--main-color);
+}
+
+/* Header Section */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    margin-right: auto;
+}
+
+.logo:hover{
+    /* transform: translateY(-3px); */
+    transform: scale(1.05);
+    color: var(--main-color);
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation li{
+    position: relative;
+    margin: .5rem 1.5rem;
+    padding: .3rem;
+    transition: transform .4s ease-in-out;
+}
+
+.navigation li a{
+    color: var(--text-color);
+    font-size: 1.05rem;
+    text-transform: uppercase;
+}
+
+.navigation li:hover a, 
+.navigation li a.active{
+    color: var(--main-color);
+}
+
+.navigation li:hover{
+    transform: translateY(-2px);
+}
+
+.navigation li a.active::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+/* Hamburger */
+
+/* Theme Switcher */
+.theme-switcher{
+    margin: 0 1rem;
+}
+
+.theme-switcher i{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+
+.theme-switcher i:hover{
+    transform: scale(.9);
+}
+
+/* Home Section */
+.name{
+    font-size: 4rem;
+    text-transform: uppercase;
 }
