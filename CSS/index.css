@@ -77,6 +77,20 @@ section {
     min-height: 100vh;
 }
 
+.sectionHeader{
+    width: 100%;
+}
+
+.sectionHeader h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.headerSpan{
+    color: var(--main-color);
+}
+
 .symbol, .emphasis {
     color: var(--main-color);
     font-weight: 600;
@@ -173,7 +187,7 @@ section {
 }
 
 .home-content{
-    max-width: 50%;
+    max-width: 45%;
 }
 
 .name {
@@ -219,7 +233,7 @@ section {
     border-radius: 1rem 0 1rem 0;
     background-color: transparent;
     text-transform: uppercase;
-    margin: 2rem 1rem;
+    margin: 2rem .5rem;
     padding: .5rem 1rem;
     overflow: hidden;
 }
@@ -309,4 +323,37 @@ section {
     border-right: 500px solid var(--main-color);
     border-bottom: 500px solid var(--main-color);
     border-left: 500px solid var(--transparent);
+}
+
+/* About Section */
+#about{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.about-image{
+}
+
+.about-content{
+    padding: 0rem 5%;
+}
+
+.about-content h3{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.about-content p{
+    margin: 2rem auto;
 }
