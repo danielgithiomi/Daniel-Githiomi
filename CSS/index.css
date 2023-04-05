@@ -189,7 +189,7 @@ section {
     transition: all .3s ease-in;
 }
 
-.hamburger i{
+.hamburger i {
     font-size: 2.5rem;
 }
 
@@ -773,8 +773,11 @@ footer {
 
 /* Medium Screens */
 @media all and (max-width: 992px) {
-
     /* Common */
+    section {
+        padding: 8rem 4% 0 4%;
+    }
+
     .sectionHeader h2 {
         font-size: 2.5rem;
     }
@@ -831,6 +834,10 @@ footer {
         font-size: 1.5rem;
     }
 
+    .service-details {
+        padding: .7rem .3rem;
+    }
+
     .technologies i {
         padding: .5rem;
         font-size: 2.5rem;
@@ -877,7 +884,7 @@ footer {
         display: block;
     }
 
-    .navigation{
+    .navigation {
         display: none;
     }
 
@@ -911,6 +918,13 @@ footer {
     /* Portfolio */
 
     /* Contact */
+
+    /* Footer */
+    .footer-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
 }
 
 /* Common */
