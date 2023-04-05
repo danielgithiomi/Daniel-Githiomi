@@ -133,7 +133,6 @@ section {
 
 .navigation {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .navigation li {
@@ -152,7 +151,7 @@ section {
 
 .navigation li:hover a,
 .navigation li a.active {
-    color: var(--main-color);
+    color: var(--hover-text-color);
 }
 
 .navigation li:hover {
@@ -166,6 +165,14 @@ section {
     bottom: -2px;
     width: 100%;
     height: 2px;
+    background-color: var(--hover-text-color);
+}
+
+.header.sticky .navigation li a{
+    color: var(--main-color);
+}
+
+.header.sticky .navigation li a.active::after{
     background-color: var(--main-color);
 }
 
@@ -177,9 +184,14 @@ section {
 .theme-switcher i,
 .hamburger i {
     font-size: 2rem;
-    color: var(--main-color);
+    color: var(--hover-text-color);
     cursor: pointer;
     transition: all .3s ease-in;
+}
+
+.header.sticky .theme-switcher i,
+.header.sticky .hamburger i{
+    color: var(--main-color);
 }
 
 .theme-switcher i:hover,
@@ -199,7 +211,7 @@ section {
 }
 
 .name {
-    font-size: 5.5rem;
+    font-size: 5rem;
     letter-spacing: .5rem;
     text-transform: uppercase;
     font-family: 'Love Ya Like A Sister', sans-serif;
@@ -316,6 +328,11 @@ section {
 
 .skill .bx {
     color: var(--main-color);
+}
+
+.skill h3{
+    text-transform: uppercase;
+    padding: .5rem 0;
 }
 
 .skills .circle {
