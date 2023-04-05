@@ -1,3 +1,15 @@
+// Navbar toggle
+const hamburger = document.querySelector('.hamburger i');
+const navigation = document.querySelector('.navigation');
+
+hamburger.addEventListener('click', () => {
+
+    hamburger.classList.toggle('bx-x');
+    navigation.classList.toggle('show');
+
+});
+
+
 // Change navbar accordiong to sections
 let sections = document.querySelectorAll('section');
 let links = document.querySelectorAll('.navigation li a');
