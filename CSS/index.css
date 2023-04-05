@@ -199,6 +199,10 @@ section {
     transform: scale(.9);
 }
 
+.hamburger i{
+    display: none;
+}
+
 /* Home Section */
 #home {
     display: flex;
@@ -253,7 +257,7 @@ section {
     border-radius: 1rem 0 1rem 0;
     background-color: transparent;
     text-transform: uppercase;
-    margin: 2rem .5rem;
+    margin: 1rem .5rem;
     padding: .5rem 1rem;
     overflow: hidden;
 }
@@ -302,7 +306,6 @@ section {
     width: 50%;
     height: 100%;
     border-radius: 50%;
-    /* background-color: var(--main-color); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -359,14 +362,19 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 0 0;
+}
+
+.about-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-content {
@@ -406,7 +414,6 @@ section {
     margin: 1rem;
     text-align: center;
     transition: all .4s ease-in-out;
-    ;
 }
 
 .service:hover {
@@ -516,7 +523,7 @@ section {
 }
 
 .project-overlay p {
-    padding: .5rem .5rem;
+    padding: .5rem;
 }
 
 .external-link a {
@@ -541,7 +548,7 @@ section {
 
 .contact-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 5rem;
 }
@@ -598,7 +605,17 @@ textarea::placeholder {
 }
 
 /* Map */
+.map{
+    width: 600px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 iframe {
+    width: 100%;
+    height: 100%;
     margin: 1rem;
     border-radius: 1rem;
     transition: all .4s ease-in-out;
@@ -643,3 +660,178 @@ footer {
     font-size: 3rem;
     color: var(--background-color);
 }
+
+
+/* --- RESPONSIVENESS --- */
+/* Large Screens */
+@media all and (max-width: 1300px) {
+    /* Common */
+    section{
+        padding: 8rem 6% 0 6%;
+    }
+
+    /* Header */
+    .header{
+        padding: 1rem 8%;
+    }
+
+    .navigation li{
+        margin: .5rem .8rem;
+        padding: .1rem;
+    }
+
+    /* Home */
+    .professional-content{
+        right: -2rem;
+    }
+
+    .skills .circle{
+        width: 480px;
+        height: 480px;
+    }
+
+    .overlay{
+        right: -18rem;
+    }
+
+    /* About */
+    .about-image{
+        width: 40%;
+    }
+
+    .about-content{
+        width: 60%;
+        padding: 0rem 4%;
+    }
+
+    /* Services */
+    .services-content{
+        gap: 2rem 0;
+        padding: 1rem 0;
+    }
+
+    .service-title{
+        font-size: 2rem;
+    }
+
+    .technologies i{
+        font-size: 2rem;
+    }
+
+    .service:hover .technologies i {
+        color: var(--main-color);
+        padding: 1rem;
+        font-size: 2.1rem;
+    }
+
+    /* Portfolio */
+    .portfolio-content{
+        gap: .9rem;
+        margin: 1.5rem .8rem;
+    }
+
+    .portfolio-project:hover{
+        box-shadow: 1px 1px 2rem var(--shadow-color);
+    }
+
+    .portfolio-project:hover .project-overlay{
+        padding: .7rem 1rem;
+    }
+
+    .project-overlay h4{
+        padding: .8rem 0;
+        font-size: 1.5rem;
+    }
+
+    .project-overlay p{
+        padding: .3rem;
+        font-size: .9rem;
+    }
+
+    .external-link a{
+        height: 35px;
+        width: 35px;
+        padding: .4rem;
+    }
+
+    /* Contact */
+    .input-names{
+        gap: 1.5rem;
+    }
+
+    textarea{
+        height: 150px;
+    }
+
+}
+
+/* Medium Screens */
+@media all and (max-width: 950px){
+    /* Common */
+    .sectionHeader h2{
+        font-size: 2.5rem;
+    }
+
+    /* Header */
+
+    /* Home */
+    .name{
+        font-size: 4rem;
+    }
+
+    .bio{
+        font-size: 1rem;
+    }
+
+    .socials .bx{
+        font-size: 2rem;
+    }
+
+    .cv-download {
+        font-size: .9rem;
+    }
+
+    .professional-content{
+        right: -1rem;
+    }
+
+    .skills .circle{
+        width: 400px;
+        height: 400px;
+    }
+
+    .skill i{
+        font-size: 2rem;
+    }
+
+    .overlay{
+        top: -4rem;
+        right: -22rem;
+    }
+
+    /* About */
+
+    /* Services */
+    .service-title{
+        font-size: 1.5rem;
+    }
+
+    /* Portfolio */
+
+    /* Contact */
+
+}
+
+/* Common */
+
+    /* Header */
+
+    /* Home */
+
+    /* About */
+
+    /* Services */
+
+    /* Portfolio */
+
+    /* Contact */

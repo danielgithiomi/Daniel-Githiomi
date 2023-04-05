@@ -5,6 +5,11 @@ let links = document.querySelectorAll('.navigation li a');
 // Add a sticky navigation bar
 window.onscroll = () => {
 
+    // Add a sticky navigation bar
+    const header = document.querySelector('header');
+
+    header.classList.toggle('sticky', window.scrollY > 100);
+
     // Change navbar active link
     sections.forEach(section => {
         let top = window.scrollY;
@@ -23,8 +28,4 @@ window.onscroll = () => {
         };
     });
 
-    // Add a sticky navigation bar
-    const header = document.querySelector('header');
-
-    header.classList.toggle('sticky', window.scrollY > 100);
 }
