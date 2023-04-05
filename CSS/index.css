@@ -518,6 +518,10 @@ section {
 }
 
 /* Contact Section */
+#contact{
+    position: relative;
+}
+
 .contact-content {
     display: flex;
     justify-content: space-around;
@@ -589,6 +593,10 @@ iframe:hover {
 
 /* Footer Section */
 footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: var(--main-color);
     border-radius: 15px 15px 0 0;
 }
