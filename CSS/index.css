@@ -74,7 +74,7 @@ body {
 }
 
 section {
-    padding: 8rem 10%;
+    padding: 9rem 10%;
     min-height: 100vh;
 }
 
@@ -338,7 +338,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .about-container{
@@ -435,7 +435,7 @@ section {
 
 .portfolio-project{
     position: relative;
-    cursor: pointer;
+    cursor: default;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -497,4 +497,69 @@ section {
 
  .external-link i{
     color: var(--main-color);
+ }
+
+ /* Contact Section */
+ .contact-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+ }
+
+ .input-names{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+ }
+
+ .input-box{
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 1rem;
+    padding: .5rem;
+ }
+
+ label{
+    margin: .5rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+ }
+
+ input, textarea{
+    padding: .5rem .7rem;
+    font-size: .95rem;
+    color: var(--main-color);
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+    background-color: var(--transparent);
+ }
+
+ input:focus, textarea:focus{
+    transform: translateY(-2px);
+    border: 1.8px solid var(--main-color);
+    background-color: var(--transparent);
+ }
+
+ textarea{
+    height: 200px;
+ }
+
+ input::placeholder, textarea::placeholder{
+    color: var(--main-color);
+    font-size: .9rem;
+ }
+
+ /* Map */
+ iframe{
+    margin: 1rem;
+    border-radius: 1rem;
+    transition: all .4s ease-in-out;
+ }
+
+ iframe:hover{
+    box-shadow: 1px 1px 2rem var(--shadow-color);
  }
