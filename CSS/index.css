@@ -472,17 +472,20 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    gap: 1.5rem;
+    gap: 3rem;
     margin: 2rem 1rem;
 }
 
 .portfolio-project {
+    width: auto;
+    height: 300px;
     position: relative;
     cursor: default;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    border-radius: 1rem;
+    border-radius: 15px;
+    background-color: #222;
 }
 
 .portfolio-project:hover {
@@ -518,12 +521,13 @@ section {
 .portfolio-project:hover img {
     transform: scale(1.1);
     transition: transform .4s ease-in-out;
+    opacity: .3;
 }
 
 .project-overlay h4 {
     padding: 1rem 0;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 
