@@ -557,7 +557,7 @@ section {
 
 .contact-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 5rem;
 }
@@ -604,7 +604,7 @@ textarea:focus {
 }
 
 textarea {
-    height: 200px;
+    height: 180px;
 }
 
 input::placeholder,
@@ -616,7 +616,7 @@ textarea::placeholder {
 /* Map */
 .map {
     width: 600px;
-    height: 450px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -632,6 +632,46 @@ iframe {
 
 iframe:hover {
     box-shadow: 1px 1px 2rem var(--shadow-color);
+}
+
+.submit_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form_submit_btn{
+    position: relative;
+    border: 1px solid var(--main-color);
+    background-color: transparent;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin: 1rem .5rem;
+    padding: .5rem 1rem;
+    overflow: hidden;
+    color: var(--black);
+    letter-spacing: 1px;
+}
+
+#form_submit_btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #f18f01;
+    transition: width .5s ease-in-out;
+    z-index: -1;
+}
+
+#form_submit_btn:hover {
+    color: var(--hover-text-color);
+}
+
+#form_submit_btn:hover::before {
+    width: 100%;
 }
 
 /* Footer Section */

@@ -41,3 +41,18 @@ window.onscroll = () => {
     });
 
 }
+
+// Motify the user that the message has been sent
+const submit_btn = document.getElementById('form_submit_btn');
+
+submit_btn.addEventListener('click', (e) => {
+
+    let first_name = document.getElementById('first_name').value;
+    let last_name = document.getElementById('last_name').value;
+    let username = first_name + ' ' + last_name;
+
+    if (first_name !== '' || last_name !== '') {
+        alert(`Hello ${username}, \nWe are grateful for getting in touch with us. \nWe will get back to you as soon as we can.`)
+    }
+    
+});
