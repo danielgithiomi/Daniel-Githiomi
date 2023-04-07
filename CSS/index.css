@@ -99,6 +99,10 @@ section {
     font-weight: 600;
 }
 
+.typed-cursor{
+    display: none;
+}
+
 /* Header Section */
 .header {
     position: fixed;

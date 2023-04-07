@@ -19,6 +19,17 @@ darkModeIcon.addEventListener('click', () => {
     document.body.classList.toggle('dark_mode');
 });
 
+// Typewriter Effect
+new Typed('.typewriter', {
+    strings: ["Daniel Githiomi"],
+    typeSpeed: 110,
+    backSpeed: 90,
+    loop: false
+});
+
+// Scroll Reveal
+
+
 // Change navbar accordiong to sections
 let sections = document.querySelectorAll('section');
 let links = document.querySelectorAll('.navigation li a');
