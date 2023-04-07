@@ -122,7 +122,9 @@ section {
 }
 
 .logo {
+    font-family: 'Love Ya Like A Sister', sans-serif;
     font-size: 3rem;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--main-color);
     cursor: pointer;
