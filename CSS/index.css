@@ -22,7 +22,7 @@
     --background-color: #1E1E1E;
     --text-color: white;
     --dull-text-color: #999;
-    --shadow-color: rgba(241, 143, 1, 0.7);
+    --shadow-color: rgba(241, 143, 1, 0.6);
 }
 
 /* Custom Scrollbar */
@@ -156,7 +156,7 @@ section {
 
 .navigation li:hover a,
 .navigation li a.active {
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 .navigation li:hover {
@@ -170,10 +170,14 @@ section {
     bottom: -2px;
     width: 100%;
     height: 2px;
-    background-color: var(--hover-text-color);
+    background-color: var(--main-color);
 }
 
 .header.sticky .navigation li a {
+    color: var(--text-color);
+}
+
+.header.sticky .navigation li a.active{
     color: var(--main-color);
 }
 
@@ -810,7 +814,7 @@ footer {
 
     /* Common */
     section {
-        padding: 6rem 4% 0 4%;
+        padding: 7rem 4% 0 4%;
     }
 
     .sectionHeader h2 {
@@ -917,6 +921,9 @@ footer {
     }
 
     /* Contact */
+    .contact-content{
+        margin-top: 2rem;
+    }
     .contact-form {
         width: 60%;
     }
@@ -948,7 +955,7 @@ footer {
     }
 
     .to-top i {
-        font-size: 2.7rem;
+        font-size: 3rem;
     }
 
 }
@@ -1117,7 +1124,7 @@ footer {
     }
 
     .to-top i {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
 }
 
