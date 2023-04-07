@@ -9,6 +9,16 @@ hamburger.addEventListener('click', () => {
 
 });
 
+// Theme Toggle
+let darkModeIcon = document.querySelector('#theme-icon');
+
+darkModeIcon.addEventListener('click', () => {
+
+    darkModeIcon.classList.toggle('bx-sun');
+    
+    document.body.classList.toggle('dark_mode');
+});
+
 // Change navbar accordiong to sections
 let sections = document.querySelectorAll('section');
 let links = document.querySelectorAll('.navigation li a');
