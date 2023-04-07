@@ -400,7 +400,6 @@ section {
 }
 
 .services-content {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -888,6 +887,7 @@ footer {
     }
 
     .service-details {
+        font-size: .9rem;
         padding: .7rem .3rem;
     }
 
@@ -897,8 +897,8 @@ footer {
     }
 
     .service:hover .technologies i {
-        padding: .5rem;
-        font-size: 2.4rem;
+        padding: .3rem;
+        font-size: 2.3rem;
     }
 
     /* Portfolio */
@@ -908,7 +908,7 @@ footer {
     }
 
     .portfolio-project {
-        height: 260px;
+        height: 270px;
     }
 
     /* Contact */
@@ -936,11 +936,13 @@ footer {
 
     /* Footer */
 
-    .copyright, .copyright i, .copyright a{
+    .copyright,
+    .copyright i,
+    .copyright a {
         font-size: .9rem;
     }
 
-    .to-top i{
+    .to-top i {
         font-size: 2.7rem;
     }
 
@@ -982,10 +984,46 @@ footer {
     }
 
     /* Home */
+    #home {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home-content {
+        max-width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-content h4 {
+        font-size: 1.2rem;
+    }
+
+    .name,
+    .bio,
+    .home-content h4 {
+        text-align: center;
+    }
+
+    .bio {
+        font-size: .9rem;
+    }
+
+    .professional-content {
+        display: none;
+    }
 
     /* About */
+    .about-content p {
+        font-size: .8rem;
+    }
 
     /* Services */
+    .service-details {
+        padding: 1rem .3rem;
+        font-size: .9rem;
+    }
 
     /* Portfolio */
 
@@ -1009,28 +1047,82 @@ footer {
     /* Home */
 
     /* About */
+    .about-container {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content h3 {
+        text-align: center;
+    }
 
     /* Services */
+    .services-content {
+        flex-direction: column;
+    }
+
+    .service {
+        padding: 2rem 1rem;
+    }
+
+    .service-title {
+        font-size: 1.7rem;
+    }
+
+    .service-details {
+        padding: .5rem 1rem;
+        font-size: .8rem;
+    }
+
+    .technologies i {
+        padding: 1rem 1.5rem;
+        font-size: 2.7rem;
+        color: var(--main-color);
+    }
 
     /* Portfolio */
+    .portfolio-content {
+        grid-template-columns: 1fr;
+    }
+
+    .project-overlay h4{
+        font-size: 1.5rem;
+    }
+
+    .project-overlay p{
+        font-size: .9rem;
+    }
 
     /* Contact */
+    .contact-form {
+        width: 80%;
+    }
 
     /* Footer */
     .copyright,
     .copyright a,
     .copyright i {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
-    .to-top i{
+    .to-top i {
         font-size: 2.3rem;
     }
 }
 
 
-@media all and (max-width: 498px) {
+@media all and (max-width: 428px) {
+
     /* Common */
+    .sectionHeader h2 {
+        font-size: 2rem;
+    }
 
     /* Header */
 
@@ -1039,8 +1131,77 @@ footer {
     /* About */
 
     /* Services */
+    .service-title {
+        font-size: 1.5rem;
+    }
+
+    .technologies i {
+        padding: 1rem;
+        font-size: 2rem;
+    }
 
     /* Portfolio */
+    .portfolio-project {
+        height: 230px;
+    }
+
+    .project-overlay h4{
+        font-size: 1.4rem;
+    }
+
+    /* Contact */
+}
+
+@media all and (max-width: 300px) {
+
+    /* Common */
+    html{
+        font-size: 90%;
+    }
+
+    .sectionHeader h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Header */
+    .logo{
+        font-size: 2rem;
+    }
+
+    /* Home */
+    .home-content{
+        max-width: 100%;
+    }
+
+    .name{
+        font-size: 3.5rem;
+    }
+
+    .home-content h4{
+        font-size: 1rem;
+    }
+
+    /* About */
+
+    /* Services */
+    .service-title {
+        font-size: 1.3rem;
+    }
+
+    .technologies i {
+        padding: 1rem 1.5rem;
+        font-size: 2.5rem;
+    }
+
+    /* Portfolio */
+    .portfolio-project {
+        height: 180px;
+    }
+
+    .project-overlay h4{
+        font-size: 1.2rem;
+        padding: .6rem .2rem;
+    }
 
     /* Contact */
 }
