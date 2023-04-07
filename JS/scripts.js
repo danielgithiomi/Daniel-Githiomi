@@ -28,7 +28,12 @@ new Typed('.typewriter', {
 });
 
 // Scroll Reveal
-
+ScrollReveal ({
+    reset: true,
+    distance: '80px',
+    duration: 1500,
+    delay: 10
+}).reveal('.sectionHeader h2', {origin: 'top'});
 
 // Change navbar accordiong to sections
 let sections = document.querySelectorAll('section');
