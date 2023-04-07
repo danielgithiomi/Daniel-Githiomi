@@ -352,16 +352,16 @@ section {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 50%;
+    width: 60%;
     height: 100vh;
     pointer-events: none;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .skills {
     position: absolute;
     top: 3%;
-    right: -2%;
+    right: -23%;
     width: 100%;
     height: 100%;
     display: flex;
@@ -406,7 +406,7 @@ section {
     flex-direction: column;
     color: var(--text-color);
     transform: rotate(calc(360deg / 4 * var(--index)));
-    transform-origin: 480px;
+    transform-origin: 580px;
     text-align: center;
     background-color: var(--background-color);
 }
@@ -425,8 +425,8 @@ section {
 
 .circle {
     position: absolute;
-    top: 3%;
-    right: -2%;
+    top: 12%;
+    right: -20%;
     width: calc(100% - 12%);
     height: calc(100% - 12%);
     border-radius: 50%;
@@ -437,7 +437,7 @@ section {
 .overlay {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -6%;
     border-top: 500px solid var(--main-color);
     border-right: 500px solid var(--main-color);
     border-bottom: 500px solid var(--main-color);
@@ -771,6 +771,34 @@ footer {
 }
 
 /* --- RESPONSIVENESS --- */
+/* Header Spin*/
+@media all and (max-width: 1700px) {
+
+    .navigation li:hover a,
+    .navigation li a.active {
+        color: var(--main-color);
+    }
+
+    .navigation li a.active::after {
+        background-color: var(--main-color);
+    }
+
+    .theme-switcher i,
+    .hamburger i {
+        font-size: 2rem;
+        color: var(--main-color);
+    }
+
+    .professional-content {
+        display: none;
+    }
+
+    .home-content {
+        max-width: 70%;
+    }
+
+}
+
 /* Extra Large Screens */
 @media all and (max-width: 1200px) {
 
