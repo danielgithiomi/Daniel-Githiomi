@@ -181,7 +181,6 @@ section {
 }
 
 .logo:hover {
-    /* transform: translateY(-3px); */
     transform: scale(1.05);
     color: var(--main-color);
 }
@@ -243,7 +242,7 @@ section {
 .theme-switcher i,
 .hamburger i {
     font-size: 2rem;
-    color: var(--hover-text-color);
+    color: var(--main-color);
     cursor: pointer;
     transition: all .3s ease-in;
 }
