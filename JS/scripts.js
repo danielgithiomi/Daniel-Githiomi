@@ -1,3 +1,8 @@
+// Page preloader
+setTimeout(function() {
+    $('.loader-container').fadeToggle();
+}, 2000);
+
 // Navbar toggle
 const hamburger = document.querySelector('.hamburger i');
 const navigation = document.querySelector('.navigation');

@@ -70,8 +70,55 @@ html {
 }
 
 body {
+    min-height: 100vh;
     background: var(--background-color);
     color: var(--text-color);
+}
+
+/* Pre loader */
+.loader-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load {
+    width: 40px;
+    height: 50px;
+}
+
+.left {
+    background: var(--main-color);
+    animation: animate 1s linear infinite;
+    margin: 10px;
+}
+
+.center {
+    background: var(--dark-grey);
+    animation: animate 1s linear infinite 0.3s;
+    margin: 10px;
+}
+
+.right {
+    background: #66656B;
+    animation: animate 1s linear infinite 0.6s;
+    margin: 10px;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1, 2.5);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
 }
 
 section {
@@ -99,7 +146,7 @@ section {
     font-weight: 600;
 }
 
-.typed-cursor{
+.typed-cursor {
     display: none;
 }
 
@@ -179,7 +226,7 @@ section {
     color: var(--text-color);
 }
 
-.header.sticky .navigation li a.active{
+.header.sticky .navigation li a.active {
     color: var(--main-color);
 }
 
@@ -320,6 +367,35 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: skills-rotate 13s infinite ease-in-out;
+}
+
+@keyframes skills-rotate {
+
+    0%,
+    20% {
+        transform: rotate(0deg);
+    }
+
+    25%,
+    45% {
+        transform: rotate(-90deg);
+    }
+
+    50%,
+    70% {
+        transform: rotate(-180deg);
+    }
+
+    75%,
+    95% {
+        transform: rotate(-270deg);
+    }
+
+    100%{
+        transform: rotate(-360deg);
+    }
+
 }
 
 .skill {
@@ -923,9 +999,10 @@ footer {
     }
 
     /* Contact */
-    .contact-content{
+    .contact-content {
         margin-top: 2rem;
     }
+
     .contact-form {
         width: 60%;
     }
@@ -1105,11 +1182,11 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .project-overlay h4{
+    .project-overlay h4 {
         font-size: 1.5rem;
     }
 
-    .project-overlay p{
+    .project-overlay p {
         font-size: .9rem;
     }
 
@@ -1159,7 +1236,7 @@ footer {
         height: 230px;
     }
 
-    .project-overlay h4{
+    .project-overlay h4 {
         font-size: 1.4rem;
     }
 
@@ -1169,7 +1246,7 @@ footer {
 @media all and (max-width: 300px) {
 
     /* Common */
-    html{
+    html {
         font-size: 90%;
     }
 
@@ -1178,20 +1255,20 @@ footer {
     }
 
     /* Header */
-    .logo{
+    .logo {
         font-size: 2rem;
     }
 
     /* Home */
-    .home-content{
+    .home-content {
         max-width: 100%;
     }
 
-    .name{
+    .name {
         font-size: 3.5rem;
     }
 
-    .home-content h4{
+    .home-content h4 {
         font-size: 1rem;
     }
 
@@ -1212,7 +1289,7 @@ footer {
         height: 180px;
     }
 
-    .project-overlay h4{
+    .project-overlay h4 {
         font-size: 1.2rem;
         padding: .6rem .2rem;
     }
