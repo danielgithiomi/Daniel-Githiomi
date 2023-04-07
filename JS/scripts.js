@@ -9,7 +9,6 @@ hamburger.addEventListener('click', () => {
 
 });
 
-
 // Change navbar accordiong to sections
 let sections = document.querySelectorAll('section');
 let links = document.querySelectorAll('.navigation li a');
@@ -21,6 +20,10 @@ window.onscroll = () => {
     const header = document.querySelector('header');
 
     header.classList.toggle('sticky', window.scrollY > 100);
+
+    // To remove navbar icon on select and scroll
+    hamburger.classList.remove('bx-x');
+    navigation.classList.remove('show');
 
     // Change navbar active link
     sections.forEach(section => {
