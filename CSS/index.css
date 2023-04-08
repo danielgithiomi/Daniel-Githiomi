@@ -242,7 +242,7 @@ section {
 .theme-switcher i,
 .hamburger i {
     font-size: 2rem;
-    color: var(--main-color);
+    color: var(--hover-text-color);
     cursor: pointer;
     transition: all .3s ease-in;
 }
@@ -464,6 +464,10 @@ section {
     justify-content: center;
 }
 
+.about-image img{
+    padding: 3rem .5rem;
+}
+
 .about-content {
     padding: 0rem 8%;
 }
@@ -590,7 +594,7 @@ section {
     align-items: center;
     text-align: center;
     padding: 1rem 2rem;
-    color: var(--hover-text-color);
+    color: var(--text-color);
     transition: all .5s ease-in-out;
 }
 
@@ -1139,6 +1143,11 @@ footer {
     .service-details {
         padding: 1rem .3rem;
         font-size: .9rem;
+    }
+
+    /* Portfolio */
+    .portfolio-project{
+        height: 230px;
     }
 
     /* Footer */
