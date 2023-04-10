@@ -4,9 +4,9 @@
 
 ## DESCRIPTION
 
-This is the repository that holds my personal portfolio as a software developer to showcase my projects and what I have been able to develop and accomplish as a software developer.
+This is the repository that holds my personal portfolio as a software developer to showcase my projects and what I have been able to develop and accomplish as a software developer. It also contains the projects that I have contributed to and participated in the development of.
 
-Created By: Daniel Githiomi
+> Created By: Daniel Githiomi
 
 ## PREVIEW
 
@@ -20,9 +20,9 @@ Created By: Daniel Githiomi
 
 ## COMPATIBILITY
 
-Compatible with all browsers including Safari and Internet Explorer.
+Compatible with all browsers including Safari and Internet Explorer making sure it is responsive.
 
-## TEXHNOLOGIES USED
+## TECHNOLOGIES USED
 
 This portfolio was made entirely using Visual Studio Code using the following technologies:
 
@@ -44,7 +44,7 @@ __Slow internet connection can result in faulty rendering of animations__
 
 ## SETUP INSTRUCTIONS
 
-* Git clone [this](https://githiomi.github.io/my-portfolio/) into your terminal.  
+* Git clone [this](https://www.github.com/Daniel-Githiomi) into your terminal.  
 * Open the folder in your favourite editor, for example vscode, using the following syntax:
 
 ``` (Javasript)
