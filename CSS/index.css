@@ -542,7 +542,7 @@ section {
 .service:hover .technologies i {
     color: var(--main-color);
     padding: 1rem;
-    font-size: 3.3rem;
+    font-size: 3.1rem;
 }
 
 /* Portfolio Section */
@@ -1202,6 +1202,10 @@ footer {
         color: var(--main-color);
     }
 
+    .service:hover .technologies i{
+        padding: 1.5rem;
+    }
+
     /* Portfolio */
     .portfolio-content {
         grid-template-columns: 1fr;
@@ -1306,6 +1310,11 @@ footer {
     .technologies i {
         padding: 1rem 1.5rem;
         font-size: 2.5rem;
+    }
+
+    .service:hover .technologies i {
+        padding: 1rem 2rem;
+        font-size: 2.3rem;
     }
 
     /* Portfolio */
