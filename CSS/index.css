@@ -445,7 +445,6 @@ section {
 
 /* About Section */
 #about {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -455,7 +454,7 @@ section {
 .about-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .about-image {
@@ -492,12 +491,13 @@ section {
 .services-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 3rem 0;
-    padding: 8rem 0;
+    justify-content: space-between;
+    gap: 2rem 0;
+    padding: 5rem 0;
 }
 
 .service {
+    height: 510px;
     border: 1.5px solid var(--main-color);
     border-radius: 1rem;
     padding: 2rem 1rem;
@@ -529,20 +529,21 @@ section {
 }
 
 .service-details {
+    font-size: 1rem;
     padding: 1rem .5rem;
 }
 
 .technologies i {
     color: var(--text-color);
     padding: 1rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     transition: all .3s ease-in-out;
 }
 
 .service:hover .technologies i {
     color: var(--main-color);
-    padding: 1rem;
-    font-size: 3.2rem;
+    padding: .8rem;
+    font-size: 3.1rem;
 }
 
 /* Portfolio Section */
@@ -802,6 +803,48 @@ footer {
 
 }
 
+@media all and (max-width: 1500px) {
+
+    /* Services */
+    .service-details {
+        padding: 1rem .3rem;
+    }
+    /* Reduce the size of each project */
+    .portfolio-project{
+        height: 250px;
+    }
+
+}
+
+@media all and (max-width: 1450px) {
+
+    /* Services */
+    .service-details {
+        padding: 1rem .3rem;
+    }
+    
+    .service {
+        height: 530px;
+    }
+    
+    .service-details {
+        font-size: 1rem;
+        padding: 1rem .5rem;
+    }
+    
+    .technologies i {
+        padding: .9rem;
+        font-size: 2.4rem;
+    }
+    
+    .service:hover .technologies i {
+        color: var(--main-color);
+        padding: .5rem;
+        font-size: 3.1rem;
+    }
+
+}
+
 /* Extra Large Screens */
 @media all and (max-width: 1200px) {
 
@@ -852,6 +895,9 @@ footer {
     }
 
     /* Services */
+    .service{
+        height: 630px;
+    }
     .services-content {
         gap: 2rem 0;
         padding: 1rem 0;
@@ -862,13 +908,13 @@ footer {
     }
 
     .technologies i {
-        font-size: 2.7rem;
+        font-size: 2.8rem;
     }
 
     .service:hover .technologies i {
         color: var(--main-color);
         padding: 1rem;
-        font-size: 2.1rem;
+        font-size: 3rem;
     }
 
     /* Portfolio */
@@ -999,6 +1045,9 @@ footer {
     }
 
     /* Services */
+    .service{
+        height: 520px;
+    }
     .service-title {
         font-size: 1.5rem;
     }
@@ -1140,6 +1189,14 @@ footer {
     }
 
     /* Services */
+    .service{
+        height: 650px;
+    }
+
+    .service-title{
+        font-size: 1.4rem;
+    }
+
     .service-details {
         padding: 1rem .3rem;
         font-size: .9rem;
@@ -1156,6 +1213,18 @@ footer {
         flex-direction: column-reverse;
         text-align: center;
         gap: 2rem;
+    }
+}
+
+@media all and (max-width: 650px){
+    /* About */
+    .about-content h3 {
+        text-align: center;
+    }
+
+    .about-image img{
+        width: 260px;
+        height: 400px;
     }
 }
 
@@ -1188,6 +1257,7 @@ footer {
     }
 
     .service {
+        height: 100%;
         padding: 2rem 1rem;
     }
 
@@ -1197,7 +1267,7 @@ footer {
 
     .service-details {
         padding: .5rem 1rem;
-        font-size: .8rem;
+        font-size: .9rem;
     }
 
     .technologies i {
@@ -1304,6 +1374,12 @@ footer {
 
     .home-content h4 {
         font-size: 1rem;
+    }
+
+    /* About */
+    .about-image img{
+        width: 200px;
+        height: 300px;
     }
 
     /* Services */
