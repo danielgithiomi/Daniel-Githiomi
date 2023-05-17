@@ -498,11 +498,12 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem 0;
+    gap: 1.5rem 0;
     padding: 5rem 0;
 }
 
 .service {
+    flex-basis: 1;
     height: 510px;
     border: 1.5px solid var(--main-color);
     border-radius: 1rem;
@@ -1148,6 +1149,11 @@ footer {
         height: 580px;
         padding: 2rem 1rem;
     }
+
+    /* Portfolio */
+    .portfolio-project{
+        height: 240px;
+    }
     
 }
 
@@ -1238,7 +1244,7 @@ footer {
 
     /* Portfolio */
     .portfolio-project {
-        height: 230px;
+        height: 200px;
     }
 
     /* Footer */
