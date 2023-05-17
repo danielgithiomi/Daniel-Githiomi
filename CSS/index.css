@@ -454,7 +454,7 @@ section {
 .about-container {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .about-image {
@@ -477,7 +477,13 @@ section {
 }
 
 .about-content p {
+    cursor: pointer;
     margin: 2rem auto;
+}
+
+.about-content p:hover{
+    transform: scale(1.01) translateY(-1px);
+    transition: transform .4s ease-in-out;
 }
 
 /* Service Section */
