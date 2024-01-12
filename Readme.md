@@ -1,4 +1,4 @@
-# MY PORTFOLIO
+# [<img src="Assets/Images/logo.png" height="30" style="margin:0 5px" alt="Portfolio"/>](https://githiomi.github.io/Daniel-Githiomi) DANIEL GITHIOMI PORTFOLIO
 
 > Developed by <a href="http://github.com/githiomi">DANIEL GITHIOMI</a>
 
@@ -60,7 +60,7 @@ code .
 Contact me through any of the following channels:
 
 * Slack: danielgithiomi
-* Email: danielgithiomi@gmail.com
+* Email: <danielgithiomi@gmail.com>
 
 ## LICENSES
 
