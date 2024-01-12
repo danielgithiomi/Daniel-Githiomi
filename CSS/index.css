@@ -366,7 +366,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: skills-rotate 13s infinite ease-in-out;
+    animation: skills-rotate 15s infinite ease-in-out;
 }
 
 @keyframes skills-rotate {
