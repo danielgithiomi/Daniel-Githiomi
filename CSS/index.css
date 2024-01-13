@@ -567,7 +567,7 @@ section {
 
 .portfolio-project {
     width: auto;
-    height: 300px;
+    height: 250px;
     position: relative;
     cursor: default;
     display: flex;
@@ -813,10 +813,6 @@ footer {
     /* Services */
     .service-details {
         padding: 1rem .3rem;
-    }
-    /* Reduce the size of each project */
-    .portfolio-project{
-        height: 250px;
     }
 
 }
@@ -1098,10 +1094,6 @@ footer {
         gap: 3rem;
     }
 
-    .portfolio-project {
-        height: 270px;
-    }
-
     /* Contact */
     .contact-content {
         margin-top: 2rem;
@@ -1150,7 +1142,7 @@ footer {
 
     /* Portfolio */
     .portfolio-project{
-        height: 240px;
+        height: 215px;
     }
     
 }
@@ -1371,10 +1363,6 @@ footer {
     }
 
     /* Portfolio */
-    .portfolio-project {
-        height: 230px;
-    }
-
     .project-overlay h4 {
         font-size: 1.4rem;
     }
