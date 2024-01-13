@@ -74,6 +74,7 @@ body {
     min-height: 100vh;
     background: var(--background-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 /* Pre loader */
@@ -1091,6 +1092,11 @@ footer {
 @media all and (max-width: 768px) {
 
     /* Header */
+    .theme-switcher i,
+    .hamburger i {
+        color: var(--main-color);
+    }
+
     .hamburger i {
         display: flex;
         transform: translateY(-3px);
@@ -1153,9 +1159,10 @@ footer {
         left: 0;
         width: 100%;
         height: 100%;
+        display: none;
     }
 
-    .skills {
+    /* .skills {
         position: fixed;
         top: 60%;
         left: 0%;
@@ -1176,7 +1183,7 @@ footer {
         right: 0;
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-width: 23rem;
-    }
+    } */
 
     /* About */
     .about-content p {
