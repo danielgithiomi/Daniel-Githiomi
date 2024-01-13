@@ -414,18 +414,15 @@ section {
     background-color: var(--background-color);
 }
 
-.skills .skill:nth-child(2) i{
-    margin-right: 20px;
-}
-
-.skills .skill:nth-child(3){
-    margin-left: -20px;
-}
-
 .skill i {
     font-size: 2rem;
     text-align: center;
+    margin-right: 20px;
     color: var(--main-color);
+}
+
+.skills .skill:nth-child(2) i{
+    margin-right: 70px;
 }
 
 .skill h3 {
