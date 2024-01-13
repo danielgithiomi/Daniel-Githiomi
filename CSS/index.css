@@ -220,6 +220,7 @@ section {
     width: 100%;
     height: 2px;
     background-color: var(--hover-text-color);
+    opacity: .8;
 }
 
 .header.sticky .navigation li a {
@@ -354,7 +355,7 @@ section {
     width: 60%;
     height: 100vh;
     pointer-events: none;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .skills {
@@ -433,8 +434,8 @@ section {
 }
 
 .circle {
-    width: 560px;
-    height: 560px;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
     border: 5px solid var(--main-color);
     z-index: -1;
@@ -443,7 +444,7 @@ section {
 .overlay {
     position: absolute;
     top: -6%;
-    right: 0;
+    right: -3%;
     border-top: 450px solid var(--main-color);
     border-right: 450px solid var(--main-color);
     border-bottom: 450px solid var(--main-color);
@@ -510,7 +511,7 @@ section {
 }
 
 .service {
-    flex-basis: 1;
+    flex: 1;
     border: 1.5px solid var(--main-color);
     border-radius: 1rem;
     padding: 2rem 1rem;
@@ -576,7 +577,6 @@ section {
 }
 
 .portfolio-project {
-    width: auto;
     height: 250px;
     position: relative;
     cursor: default;
@@ -793,54 +793,36 @@ footer {
 /* Header Spin*/
 @media all and (max-width: 1700px) {
 
-    .navigation li:hover a,
-    .navigation li a.active {
-        color: var(--main-color);
-    }
-
-    .navigation li a.active::after {
-        background-color: var(--main-color);
-    }
-
-    .theme-switcher i,
-    .hamburger i {
-        font-size: 2rem;
-        color: var(--main-color);
-    }
-
-    .professional-content {
-        display: none;
-    }
-
     .home-content {
-        max-width: 70%;
-    }
-
-}
-
-@media all and (max-width: 1500px) {
-
-    /* Services */
-    .service-details {
-        padding: 1rem .3rem;
+        max-width: 60%;
     }
 
 }
 
 @media all and (max-width: 1455px) {
 
+    /* Home */
+    .home-content {
+        max-width: 50%;
+    }
+
+    .name {
+        font-size: 3.5rem;
+    }
+
+    /* Professional */
+    .professional-content{
+        right: -15%;
+    }
+
     /* Services */
     .service-details {
         padding: 1rem .3rem;
     }
     
-    .service {
-        height: 550px;
-    }
-    
     .service-details {
         font-size: 1rem;
-        padding: 1rem .5rem;
+        padding: 1rem .3rem;
     }
     
     .technologies i {
@@ -854,16 +836,6 @@ footer {
         font-size: 2.8rem;
     }
 
-}
-
-@media all and (max-width: 1360px) {
-
-    /* Services */
-    .service {
-        height: 620px;
-        padding: 2rem 1rem;
-    }
-    
 }
 
 /* Extra Large Screens */
@@ -889,17 +861,13 @@ footer {
         font-size: 4.5rem;
     }
 
-    .professional-content {
-        right: -2rem;
+    /* Professional */
+    .professional-content, .circle{
+        right: -20%;
     }
 
-    .skills .circle {
-        width: 480px;
-        height: 480px;
-    }
-
-    .overlay {
-        right: -18rem;
+    .skill h3 {
+        font-size: 1.5rem;
     }
 
     /* About */
@@ -916,9 +884,6 @@ footer {
     }
 
     /* Services */
-    .service{
-        height: 630px;
-    }
     .services-content {
         gap: 2rem 0;
         padding: 1rem 0;
@@ -929,7 +894,7 @@ footer {
     }
 
     .technologies i {
-        font-size: 2.8rem;
+        font-size: 2,3rem;
     }
 
     .service:hover .technologies i {
@@ -982,16 +947,6 @@ footer {
         height: 450px;
     }
 
-}
-
-@media all and (max-width: 1100px) {
-
-    /* Services */
-    .service {
-        height: 700px;
-        padding: 2rem 1rem;
-    }
-    
 }
 
 /* Large Screens */
@@ -1048,21 +1003,13 @@ footer {
         font-size: .8rem;
     }
 
+    /* Feature */
     .professional-content {
-        right: -1rem;
-    }
-
-    .skills .circle {
-        width: 400px;
-        height: 400px;
+        right: -35%;
     }
 
     .skill i {
         font-size: 2rem;
-    }
-
-    .overlay {
-        right: -22rem;
     }
 
     /* About */
@@ -1076,9 +1023,6 @@ footer {
     }
 
     /* Services */
-    .service{
-        height: 520px;
-    }
     .service-title {
         font-size: 1.5rem;
     }
@@ -1143,28 +1087,13 @@ footer {
     }
 }
 
-@media all and (max-width: 910px) {
-    /* Services */
-    .service {
-        height: 580px;
-        padding: 2rem 1rem;
-    }
-
-    /* Portfolio */
-    .portfolio-project{
-        height: 215px;
-    }
-    
-}
-
 /* Medium Screens */
 @media all and (max-width: 768px) {
-    /* Common */
 
     /* Header */
     .hamburger i {
         display: flex;
-        transform: translatey(-3px);
+        transform: translateY(-3px);
     }
 
     .navigation {
@@ -1206,7 +1135,7 @@ footer {
     }
 
     .home-content h4 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .name,
@@ -1219,8 +1148,34 @@ footer {
         font-size: .9rem;
     }
 
-    .professional-content {
-        display: none;
+    /* Professional */
+    .professional-content{
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .skills {
+        position: fixed;
+        top: 60%;
+        left: 0%;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .skill {
+        padding: 0 10px;
+        left: auto;
+        transform-origin: 0;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 70rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23rem;
     }
 
     /* About */
@@ -1229,10 +1184,6 @@ footer {
     }
 
     /* Services */
-    .service{
-        height: 650px;
-    }
-
     .service-title{
         font-size: 1.4rem;
     }
