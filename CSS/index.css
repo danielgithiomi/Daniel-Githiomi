@@ -123,7 +123,7 @@ body {
 }
 
 section {
-    padding: 9rem 10% 0 10%;
+    padding: 8rem 10% 0 10%;
     min-height: 100vh;
 }
 
@@ -399,11 +399,11 @@ section {
 .skill {
     position: absolute;
     padding: 2rem 0;
-    left: 0;
     display: flex;
     flex-direction: column;
     color: var(--text-color);
     transform: rotate(calc(360deg / 4 * var(--index)));
+    transform-origin: 600px center;
     text-align: center;
     background-color: var(--background-color);
 }
@@ -496,12 +496,11 @@ section {
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem 0;
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .service {
     flex-basis: 1;
-    height: 510px;
     border: 1.5px solid var(--main-color);
     border-radius: 1rem;
     padding: 2rem 1rem;
@@ -547,7 +546,7 @@ section {
 .service:hover .technologies i {
     color: var(--main-color);
     padding: .8rem;
-    font-size: 3.1rem;
+    font-size: 2.8rem;
 }
 
 /* Portfolio Section */
@@ -649,7 +648,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .input-names {
@@ -694,7 +693,7 @@ textarea:focus {
 }
 
 textarea {
-    height: 180px;
+    height: 80px;
 }
 
 input::placeholder,
@@ -744,7 +743,8 @@ textarea::placeholder {
 
 /* Footer Section */
 footer {
-    position: absolute;
+    position: sticky;
+    top: 100%;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -753,8 +753,9 @@ footer {
 }
 
 .footer-container {
-    padding: 1rem 10%;
+    padding: .8rem 10%;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
@@ -774,7 +775,7 @@ footer {
 }
 
 .to-top i {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--background-color);
 }
 
@@ -1125,7 +1126,7 @@ footer {
     }
 
     textarea {
-        height: 100px;
+        height: 60px;
     }
 
     /* Footer */
