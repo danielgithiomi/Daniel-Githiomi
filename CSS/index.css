@@ -191,14 +191,14 @@ section {
 
 .navigation li {
     position: relative;
-    margin: .5rem 1.2rem;
-    padding: .3rem;
+    margin: .5rem 1rem;
+    padding: .2rem;
     transition: transform .4s ease-in-out;
 }
 
 .navigation li a {
     color: var(--text-color);
-    font-size: 1.03rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -351,8 +351,8 @@ section {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 800px;
-    height: 800px;
+    width: 60%;
+    height: 100vh;
     pointer-events: none;
     overflow: hidden;
 }
@@ -365,7 +365,6 @@ section {
     height: 800px;
     border-radius: 50%;
     display: flex;
-    /* background-color: purple; */
     align-items: center;
     justify-content: center;
     animation: skills-rotate 15s infinite ease-in-out;
@@ -443,12 +442,12 @@ section {
 
 .overlay {
     position: absolute;
-    top: -12%;
+    top: -6%;
     right: 0;
-    border-top: 500px solid var(--main-color);
-    border-right: 500px solid var(--main-color);
-    border-bottom: 500px solid var(--main-color);
-    border-left: 500px solid var(--transparent);
+    border-top: 450px solid var(--main-color);
+    border-right: 450px solid var(--main-color);
+    border-bottom: 450px solid var(--main-color);
+    border-left: 450px solid var(--transparent);
 }
 
 /* About Section */
