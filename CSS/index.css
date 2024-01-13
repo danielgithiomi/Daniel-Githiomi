@@ -356,7 +356,7 @@ section {
     width: 60%;
     height: 100vh;
     pointer-events: none;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .skills {
@@ -811,6 +811,15 @@ footer {
         font-size: 3.5rem;
     }
 
+    
+    .navigation li:nth-child(1) a {
+        color: var(--main-color);
+    }
+
+    .navigation li a.active::after {
+        background-color: var(--main-color);
+    }
+
     /* Professional */
     .professional-content{
         right: -15%;
@@ -835,6 +844,11 @@ footer {
         color: var(--main-color);
         padding: 1rem;
         font-size: 2.8rem;
+    }
+
+    /* Portfolio */
+    .portfolio-project{
+        height: 200px;
     }
 
 }
@@ -862,13 +876,21 @@ footer {
         font-size: 4.5rem;
     }
 
-    /* Professional */
-    .professional-content, .circle{
-        right: -20%;
+    /* Feature */
+    .professional-content {
+        right: -5%;
     }
 
-    .skill h3 {
-        font-size: 1.5rem;
+    .skill i {
+        font-size: 2rem;
+    }
+
+    .overlay, .skills {
+        right: -33%;
+    }
+
+    .skill h3{
+        font-size: 1.4rem;
     }
 
     /* About */
@@ -1006,11 +1028,25 @@ footer {
 
     /* Feature */
     .professional-content {
-        right: -35%;
+        right: -15%;
     }
 
     .skill i {
         font-size: 2rem;
+    }
+
+    .overlay {
+        top: -20%;
+        border-top: 550px solid var(--main-color);
+        border-bottom: 550px solid var(--main-color);
+    }
+
+    .overlay, .skills {
+        right: -65%;
+    }
+
+    .skill h3{
+        font-size: 1.4rem;
     }
 
     /* About */
@@ -1156,9 +1192,6 @@ footer {
 
     /* Professional */
     .professional-content{
-        left: 0;
-        width: 100%;
-        height: 100%;
         display: none;
     }
 
