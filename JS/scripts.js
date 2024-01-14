@@ -49,7 +49,7 @@ window.onscroll = () => {
     // Add a sticky navigation bar
     const header = document.querySelector('header');
 
-    header.classList.toggle('sticky', window.scrollY > 100);
+    header.classList.toggle('sticky', window.scrollY > 50);
 
     // To remove navbar icon on select and scroll
     hamburger.classList.remove('bx-x');
@@ -59,7 +59,7 @@ window.onscroll = () => {
     sections.forEach(section => {
         let top = window.scrollY;
 
-        let offset = section.offsetTop - 100;
+        let offset = section.offsetTop - 150;
         let height = section.offsetHeight;
         let sectionId = section.getAttribute('id');
 
@@ -87,7 +87,7 @@ submit_btn.addEventListener('click', (e) => {
     let username = first_name + ' ' + last_name;
 
     if (first_name !== '' || last_name !== '') {
-        alert(`Hello ${username}, \nWe are grateful for getting in touch with us. \nWe will get back to you via ${email} as soon as we can.`)
+        alert(`Hello ${username}, \nI appreciate you getting in touch with me. \nI will reach out via ${email} as soon as I can.\n\nIf very urgent, please contact me at: danielgithiomi@gmail.com`)
     }
 
     e.preventDefault();
