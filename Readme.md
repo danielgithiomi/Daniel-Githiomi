@@ -1,4 +1,4 @@
-# [<img src="Assets/Images/logo.png" height="30" style="margin:0 5px" alt="Portfolio"/>](https://githiomi.github.io/Daniel-Githiomi) DANIEL GITHIOMI PORTFOLIO
+# [<img src="Assets\Images\Logo.png" height="30" style="margin:0 5px" alt="Portfolio"/>](https://githiomi.github.io/Daniel-Githiomi) DANIEL GITHIOMI PORTFOLIO
 
 > Developed by <a href="http://github.com/githiomi">DANIEL GITHIOMI</a>
 
