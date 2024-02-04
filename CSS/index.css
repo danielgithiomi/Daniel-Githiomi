@@ -315,41 +315,46 @@ section {
     overflow: visible;
 }
 
-.socials a:nth-child(1)::before,
-.socials a:nth-child(2)::before,
-.socials a:nth-child(3)::before,
-.socials a:nth-child(4)::before,
-.socials a:nth-child(5)::before {
+.socials a::before {
     display: none;
     position: absolute;
     top: -18%;
-    left: -15%;
+    left: -18%;
     z-index: 10;
-    content: 'GitHub';
+    content: '';
     background-color: var(--main-color);
-    padding: .3rem .3rem;
+    padding: .2rem .3rem;
     border-radius: .5rem;
     color: #1E1E1E;
     transition: all .3s ease-in-out;
 }
 
-.socials a:nth-child(1)::after {
+.socials a::after {
+    display: none;
     position: absolute;
     content: '';
-    top: 20%;
+    top: 15%;
     left: 34%;
     border-top: 8px solid var(--main-color);
     border-right: 8px solid var(--transparent);
     border-bottom: 8px solid var(--transparent);
     border-left: 8px solid var(--transparent);
+    transition: all .3s ease-in-out;
+}
+
+.socials a:nth-child(1)::before {
+    left: -10%;
+    content: 'GitHub';
 }
 
 .socials a:nth-child(2)::before {
     content: 'Twitter';
+    left: -10%;
 }
 
 .socials a:nth-child(3)::before {
     content: 'Facebook';
+    left: -20%;
 }
 
 .socials a:nth-child(4)::before {
@@ -358,13 +363,15 @@ section {
 
 .socials a:nth-child(5)::before {
     content: 'Instagram';
+    left: -30%;
 }
 
-.socials a:hover:nth-child(1)::before,
-.socials a:hover:nth-child(2)::before,
-.socials a:hover:nth-child(3)::before,
-.socials a:hover:nth-child(4)::before,
-.socials a:hover:nth-child(5)::before {
+.socials a:nth-child(3)::after {
+    left: 40%;
+}
+
+.socials a:hover::before,
+.socials a:hover::after {
     display: block;
 }
 
