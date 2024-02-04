@@ -296,7 +296,7 @@ section {
 .socials .bx {
     font-size: 2.5rem;
     color: var(--main-color);
-    margin: 1rem .5rem;
+    margin: 1.5rem .5rem;
     --fa-beat-fade-opacity: 0.5;
     --fa-beat-fade-scale: 1.05;
     --fa-animation-duration: 2s;
@@ -308,6 +308,64 @@ section {
     --fa-beat-fade-scale: 1;
     --fa-animation-duration: 0;
     transition: all .3s ease-in-out;
+}
+
+.socials a{
+    position: relative;
+    overflow: visible;
+}
+
+.socials a:nth-child(1)::before,
+.socials a:nth-child(2)::before,
+.socials a:nth-child(3)::before,
+.socials a:nth-child(4)::before,
+.socials a:nth-child(5)::before {
+    display: none;
+    position: absolute;
+    top: -18%;
+    left: -15%;
+    z-index: 10;
+    content: 'GitHub';
+    background-color: var(--main-color);
+    padding: .3rem .3rem;
+    border-radius: .5rem;
+    color: #1E1E1E;
+    transition: all .3s ease-in-out;
+}
+
+.socials a:nth-child(1)::after {
+    position: absolute;
+    content: '';
+    top: 20%;
+    left: 34%;
+    border-top: 8px solid var(--main-color);
+    border-right: 8px solid var(--transparent);
+    border-bottom: 8px solid var(--transparent);
+    border-left: 8px solid var(--transparent);
+}
+
+.socials a:nth-child(2)::before {
+    content: 'Twitter';
+}
+
+.socials a:nth-child(3)::before {
+    content: 'Facebook';
+}
+
+.socials a:nth-child(4)::before {
+    content: 'LinkedIn';
+}
+
+.socials a:nth-child(5)::before {
+    content: 'Instagram';
+}
+
+.socials a:hover:nth-child(1)::before,
+.socials a:hover:nth-child(2)::before,
+.socials a:hover:nth-child(3)::before,
+.socials a:hover:nth-child(4)::before,
+.socials a:hover:nth-child(5)::before {
+    display: block;
 }
 
 /* CV Section */
