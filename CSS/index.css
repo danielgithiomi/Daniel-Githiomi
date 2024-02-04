@@ -376,6 +376,10 @@ section {
 }
 
 /* CV Section */
+.cv {
+    display: flex;
+}
+
 .cv-download {
     position: relative;
     border: 1px solid var(--main-color);
@@ -1310,6 +1314,11 @@ footer {
 }
 
 @media all and (max-width: 650px){
+    /* CV */
+    .cv{
+        flex-direction: column;
+    }
+
     /* About */
     .about-content h3 {
         text-align: center;
