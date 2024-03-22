@@ -136,6 +136,10 @@ section {
     text-transform: uppercase;
     font-size: 3rem;
     text-align: center;
+    /* Section code to make text have a gradient */
+    /* background: linear-gradient(90deg, #016738, var(--main-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
 .headerSpan {
