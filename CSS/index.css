@@ -2,11 +2,10 @@
 @charset 'UTF-8';
 
 /* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Poppins:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Poppins:wght@400;700&display=swap");
 
 /* CSS Variables */
 :root {
-
     --background-color: #fdfdfd;
     --main-color: #f18f01;
     --text-color: black;
@@ -15,11 +14,11 @@
     --dark-grey: #222;
     --shadow-color: rgba(241, 143, 1, 0.5);
     --transparent: transparent;
-    --background-gradient: linear-gradient(rgb(0, 0, 0, .1), var(--main-color));
+    --background-gradient: linear-gradient(rgb(0, 0, 0, 0.1), var(--main-color));
 }
 
 .dark_mode {
-    --background-color: #1E1E1E;
+    --background-color: #1e1e1e;
     --text-color: white;
     --dull-text-color: #999;
     --shadow-color: rgba(241, 143, 1, 0.6);
@@ -28,17 +27,17 @@
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: .45rem;
+    width: 0.45rem;
 }
 
 ::-webkit-scrollbar-track {
     background-color: var(--background-color);
-    margin-block: .1rem;
+    margin-block: 0.1rem;
 }
 
 ::-webkit-scrollbar-thumb {
     background: var(--main-color);
-    opacity: .5;
+    opacity: 0.5;
     border-radius: 100vw;
 }
 
@@ -51,9 +50,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
     outline: none;
 }
 
@@ -104,7 +103,7 @@ body {
 }
 
 .right {
-    background: #66656B;
+    background: #66656b;
     animation: animate 1s linear infinite 0.6s;
     margin: 10px;
 }
@@ -129,7 +128,7 @@ section {
 }
 
 /* For Loom Companion */
-#shadow-host-companion{
+#shadow-host-companion {
     padding: 0;
     height: 0;
     margin: 0;
@@ -179,17 +178,17 @@ section {
 
 .sticky {
     background-color: var(--background-color);
-    box-shadow: .1rem .1rem 1rem var(--shadow-color);
+    box-shadow: 0.1rem 0.1rem 1rem var(--shadow-color);
 }
 
 .logo {
-    font-family: 'Love Ya Like A Sister', sans-serif;
+    font-family: "Love Ya Like A Sister", sans-serif;
     font-size: 3rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--main-color);
     cursor: pointer;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     margin-right: auto;
 }
 
@@ -204,9 +203,9 @@ section {
 
 .navigation li {
     position: relative;
-    margin: .5rem 1rem;
-    padding: .2rem;
-    transition: transform .4s ease-in-out;
+    margin: 0.5rem 1rem;
+    padding: 0.2rem;
+    transition: transform 0.4s ease-in-out;
 }
 
 .navigation li a {
@@ -226,14 +225,14 @@ section {
 }
 
 .navigation li a.active::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: -2px;
     width: 100%;
     height: 2px;
     background-color: var(--hover-text-color);
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .header.sticky .navigation li a {
@@ -258,7 +257,7 @@ section {
     font-size: 2rem;
     color: var(--hover-text-color);
     cursor: pointer;
-    transition: all .3s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 .hamburger i {
@@ -272,7 +271,7 @@ section {
 
 .theme-switcher i:hover,
 .hamburger i:hover {
-    transform: scale(.9);
+    transform: scale(0.9);
 }
 
 /* Home Section */
@@ -287,11 +286,12 @@ section {
     max-width: 45%;
 }
 
-.name {
+.fname,
+.lname {
     font-size: 5rem;
-    letter-spacing: .5rem;
+    letter-spacing: 0.5rem;
     text-transform: uppercase;
-    font-family: 'Love Ya Like A Sister', sans-serif;
+    font-family: "Love Ya Like A Sister", sans-serif;
     color: var(--main-color);
 }
 
@@ -309,7 +309,7 @@ section {
 .socials .bx {
     font-size: 2.5rem;
     color: var(--main-color);
-    margin: 1.5rem .5rem;
+    margin: 1.5rem 0.5rem;
     --fa-beat-fade-opacity: 0.5;
     --fa-beat-fade-scale: 1.05;
     --fa-animation-duration: 2s;
@@ -320,10 +320,10 @@ section {
     --fa-beat-fade-opacity: 1;
     --fa-beat-fade-scale: 1;
     --fa-animation-duration: 0;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.socials a{
+.socials a {
     position: relative;
     overflow: visible;
 }
@@ -334,48 +334,48 @@ section {
     top: -18%;
     left: -18%;
     z-index: 10;
-    content: '';
+    content: "";
     background-color: var(--main-color);
-    padding: .2rem .3rem;
-    border-radius: .5rem;
-    color: #1E1E1E;
-    transition: all .3s ease-in-out;
+    padding: 0.2rem 0.3rem;
+    border-radius: 0.5rem;
+    color: #1e1e1e;
+    transition: all 0.3s ease-in-out;
 }
 
 .socials a::after {
     display: none;
     position: absolute;
-    content: '';
+    content: "";
     top: 15%;
     left: 34%;
     border-top: 8px solid var(--main-color);
     border-right: 8px solid var(--transparent);
     border-bottom: 8px solid var(--transparent);
     border-left: 8px solid var(--transparent);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .socials a:nth-child(1)::before {
     left: -10%;
-    content: 'GitHub';
+    content: "GitHub";
 }
 
 .socials a:nth-child(2)::before {
-    content: 'Twitter';
+    content: "Twitter";
     left: -10%;
 }
 
 .socials a:nth-child(3)::before {
-    content: 'Facebook';
+    content: "Facebook";
     left: -20%;
 }
 
 .socials a:nth-child(4)::before {
-    content: 'LinkedIn';
+    content: "LinkedIn";
 }
 
 .socials a:nth-child(5)::before {
-    content: 'Instagram';
+    content: "Instagram";
     left: -30%;
 }
 
@@ -399,8 +399,8 @@ section {
     border-radius: 1rem 0 1rem 0;
     background-color: transparent;
     text-transform: uppercase;
-    margin: 1rem .5rem;
-    padding: .5rem 1rem;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem 1rem;
     overflow: hidden;
 }
 
@@ -410,14 +410,14 @@ section {
 }
 
 .cv-download::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
     background-color: #f18f01;
-    transition: width .5s ease-in-out;
+    transition: width 0.5s ease-in-out;
     z-index: -1;
 }
 
@@ -479,7 +479,6 @@ section {
     100% {
         transform: rotate(-360deg);
     }
-
 }
 
 .skill {
@@ -503,13 +502,13 @@ section {
     color: var(--main-color);
 }
 
-.skills .skill:nth-child(2) i{
+.skills .skill:nth-child(2) i {
     margin-right: 70px;
 }
 
 .skill h3 {
     text-transform: uppercase;
-    padding: .3rem 0;
+    padding: 0.3rem 0;
     font-size: 2rem;
 }
 
@@ -553,7 +552,7 @@ section {
 }
 
 .about-image img {
-    padding: 3rem .5rem;
+    padding: 3rem 0.5rem;
 }
 
 .about-content {
@@ -570,9 +569,9 @@ section {
     margin: 2rem auto;
 }
 
-.about-content p:hover{
+.about-content p:hover {
     transform: scale(1.01) translateY(-1px);
-    transition: transform .4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 
 /* Service Section */
@@ -599,7 +598,7 @@ section {
     padding: 2rem 1rem;
     margin: 1rem;
     text-align: center;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .service:hover {
@@ -617,7 +616,7 @@ section {
     padding: 1rem 0;
     text-transform: uppercase;
     font-weight: 600;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .service:hover .service-title {
@@ -626,19 +625,19 @@ section {
 
 .service-details {
     font-size: 1rem;
-    padding: 1rem .5rem;
+    padding: 1rem 0.5rem;
 }
 
 .technologies i {
     color: var(--text-color);
     padding: 1rem;
     font-size: 2.5rem;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .service:hover .technologies i {
     color: var(--main-color);
-    padding: .8rem;
+    padding: 0.8rem;
     font-size: 2.8rem;
 }
 
@@ -692,7 +691,7 @@ section {
     text-align: center;
     padding: 1rem 2rem;
     color: white;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .portfolio-project img {
@@ -702,8 +701,8 @@ section {
 
 .portfolio-project:hover img {
     transform: scale(1.1);
-    transition: transform .4s ease-in-out;
-    opacity: .2;
+    transition: transform 0.4s ease-in-out;
+    opacity: 0.2;
 }
 
 .project-overlay h4 {
@@ -714,13 +713,13 @@ section {
 }
 
 .project-overlay p {
-    padding: .5rem;
+    padding: 0.5rem;
 }
 
 .external-link a {
     height: 40px;
     width: 40px;
-    padding: .5rem;
+    padding: 0.5rem;
     background-color: var(--background-color);
     border-radius: 50%;
     display: flex;
@@ -755,12 +754,12 @@ section {
 .input-box {
     display: flex;
     flex-direction: column;
-    margin: .5rem 1rem;
-    padding: .5rem;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem;
 }
 
 label {
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
@@ -768,12 +767,12 @@ label {
 
 input,
 textarea {
-    padding: .4rem .7rem;
-    font-size: .95rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.95rem;
     color: var(--main-color);
     border: none;
     border-bottom: 1px solid var(--text-color);
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
     background-color: var(--transparent);
 }
 
@@ -793,7 +792,7 @@ textarea {
 input::placeholder,
 textarea::placeholder {
     color: var(--main-color);
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 .submit_btn {
@@ -808,22 +807,22 @@ textarea::placeholder {
     border: 1px solid var(--main-color);
     background-color: transparent;
     text-transform: uppercase;
-    margin: 1rem .5rem;
-    padding: .5rem 1rem;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem 1rem;
     overflow: hidden;
     color: var(--black);
     letter-spacing: 1px;
 }
 
 #form_submit_btn::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 0;
     height: 100%;
     background-color: #f18f01;
-    transition: width .5s ease-in-out;
+    transition: width 0.5s ease-in-out;
     z-index: -1;
 }
 
@@ -847,7 +846,7 @@ footer {
 }
 
 .footer-container {
-    padding: .8rem 10%;
+    padding: 0.8rem 10%;
     display: flex;
     width: 100%;
     align-items: center;
@@ -858,9 +857,9 @@ footer {
 .copyright a,
 .copyright i {
     color: var(--background-color);
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     font-size: 1.1rem;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .copyright a:hover,
@@ -876,11 +875,9 @@ footer {
 /* --- RESPONSIVENESS --- */
 /* Header Spin*/
 @media all and (max-width: 1700px) {
-
     .home-content {
         max-width: 60%;
     }
-
 }
 
 @media all and (max-width: 1455px) {
@@ -894,7 +891,6 @@ footer {
         font-size: 3.5rem;
     }
 
-    
     .navigation li:nth-child(1) a {
         color: var(--main-color);
     }
@@ -904,25 +900,25 @@ footer {
     }
 
     /* Professional */
-    .professional-content{
+    .professional-content {
         right: -15%;
     }
 
     /* Services */
     .service-details {
-        padding: 1rem .3rem;
+        padding: 1rem 0.3rem;
     }
-    
+
     .service-details {
         font-size: 1rem;
-        padding: 1rem .3rem;
+        padding: 1rem 0.3rem;
     }
-    
+
     .technologies i {
-        padding: .9rem;
+        padding: 0.9rem;
         font-size: 2.5rem;
     }
-    
+
     .service:hover .technologies i {
         color: var(--main-color);
         padding: 1rem;
@@ -930,10 +926,9 @@ footer {
     }
 
     /* Portfolio */
-    .portfolio-project{
+    .portfolio-project {
         height: 200px;
     }
-
 }
 
 /* Extra Large Screens */
@@ -950,8 +945,8 @@ footer {
     }
 
     .navigation li {
-        margin: .5rem .8rem;
-        padding: .1rem;
+        margin: 0.5rem 0.8rem;
+        padding: 0.1rem;
     }
 
     /* Home */
@@ -968,11 +963,12 @@ footer {
         font-size: 2rem;
     }
 
-    .overlay, .skills {
+    .overlay,
+    .skills {
         right: -33%;
     }
 
-    .skill h3{
+    .skill h3 {
         font-size: 1.4rem;
     }
 
@@ -1000,7 +996,7 @@ footer {
     }
 
     .technologies i {
-        font-size: 2,3rem;
+        font-size: 2, 3rem;
     }
 
     .service:hover .technologies i {
@@ -1011,8 +1007,8 @@ footer {
 
     /* Portfolio */
     .portfolio-content {
-        gap: .9rem;
-        margin: 1.5rem .8rem;
+        gap: 0.9rem;
+        margin: 1.5rem 0.8rem;
     }
 
     .portfolio-project:hover {
@@ -1020,23 +1016,23 @@ footer {
     }
 
     .portfolio-project:hover .project-overlay {
-        padding: .7rem 1rem;
+        padding: 0.7rem 1rem;
     }
 
     .project-overlay h4 {
-        padding: .8rem 0;
+        padding: 0.8rem 0;
         font-size: 1.5rem;
     }
 
     .project-overlay p {
-        padding: .3rem;
-        font-size: .9rem;
+        padding: 0.3rem;
+        font-size: 0.9rem;
     }
 
     .external-link a {
         height: 35px;
         width: 35px;
-        padding: .4rem;
+        padding: 0.4rem;
     }
 
     /* Contact */
@@ -1052,7 +1048,6 @@ footer {
         width: auto;
         height: 450px;
     }
-
 }
 
 /* Large Screens */
@@ -1069,7 +1064,7 @@ footer {
 
     /* Header */
     .header {
-        padding: .8rem 6%;
+        padding: 0.8rem 6%;
     }
 
     .logo {
@@ -1077,12 +1072,12 @@ footer {
     }
 
     .navigation li {
-        margin: .4rem .5rem;
+        margin: 0.4rem 0.5rem;
         padding: 0;
     }
 
     .navigation li a {
-        font-size: .9rem;
+        font-size: 0.9rem;
         letter-spacing: 0;
     }
 
@@ -1101,12 +1096,12 @@ footer {
 
     .socials .bx {
         font-size: 2rem;
-        margin: .5rem;
+        margin: 0.5rem;
     }
 
     .cv-download {
-        padding: .4rem .8rem;
-        font-size: .8rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
     }
 
     /* Feature */
@@ -1124,11 +1119,12 @@ footer {
         border-bottom: 550px solid var(--main-color);
     }
 
-    .overlay, .skills {
+    .overlay,
+    .skills {
         right: -65%;
     }
 
-    .skill h3{
+    .skill h3 {
         font-size: 1.4rem;
     }
 
@@ -1148,17 +1144,17 @@ footer {
     }
 
     .service-details {
-        font-size: .9rem;
-        padding: .7rem .3rem;
+        font-size: 0.9rem;
+        padding: 0.7rem 0.3rem;
     }
 
     .technologies i {
-        padding: .25rem;
+        padding: 0.25rem;
         font-size: 2.2rem;
     }
 
     .service:hover .technologies i {
-        padding: .3rem;
+        padding: 0.3rem;
         font-size: 2.3rem;
     }
 
@@ -1181,14 +1177,14 @@ footer {
         width: 100%;
         flex-direction: column;
         gap: 0;
-        padding: .2rem;
-        margin: .2rem;
+        padding: 0.2rem;
+        margin: 0.2rem;
     }
 
     .input-box {
         width: 100%;
-        margin: .2rem .3rem;
-        padding: .2rem;
+        margin: 0.2rem 0.3rem;
+        padding: 0.2rem;
     }
 
     textarea {
@@ -1199,7 +1195,7 @@ footer {
     .copyright,
     .copyright i,
     .copyright a {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 
     .to-top i {
@@ -1270,50 +1266,27 @@ footer {
     }
 
     .bio {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 
     /* Professional */
-    .professional-content{
+    .professional-content {
         display: none;
     }
 
-    /* .skills {
-        position: fixed;
-        top: 60%;
-        left: 0%;
-        border-radius: 0;
-        width: 100%;
-    }
-
-    .skill {
-        padding: 0 10px;
-        left: auto;
-        transform-origin: 0;
-    }
-
-    .overlay {
-        position: fixed;
-        top: 70rem;
-        left: 50%;
-        right: 0;
-        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
-        border-width: 23rem;
-    } */
-
     /* About */
     .about-content p {
-        font-size: .8rem;
+        font-size: 0.8rem;
     }
 
     /* Services */
-    .service-title{
+    .service-title {
         font-size: 1.4rem;
     }
 
     .service-details {
-        padding: 1rem .3rem;
-        font-size: .9rem;
+        padding: 1rem 0.3rem;
+        font-size: 0.9rem;
     }
 
     /* Portfolio */
@@ -1323,16 +1296,17 @@ footer {
 
     /* Footer */
     .footer-container {
-        padding: .7rem 6%;
+        padding: 0.7rem 6%;
         flex-direction: column-reverse;
         text-align: center;
         gap: 2rem;
     }
 }
 
-@media all and (max-width: 650px){
+@media all and (max-width: 650px) {
+
     /* CV */
-    .cv{
+    .cv {
         flex-direction: column;
     }
 
@@ -1341,7 +1315,7 @@ footer {
         text-align: center;
     }
 
-    .about-image img{
+    .about-image img {
         width: 260px;
         height: 400px;
     }
@@ -1349,6 +1323,11 @@ footer {
 
 /* Small Screens */
 @media all and (max-width: 600px) {
+
+    /* Home */
+    .home-content {
+        font-size: 1rem;
+    }
 
     /* About */
     .about-container {
@@ -1366,7 +1345,7 @@ footer {
         text-align: center;
     }
 
-    .about-content p{
+    .about-content p {
         text-align: center;
     }
 
@@ -1385,8 +1364,8 @@ footer {
     }
 
     .service-details {
-        padding: .5rem 1rem;
-        font-size: .9rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
     }
 
     .technologies i {
@@ -1395,7 +1374,7 @@ footer {
         color: var(--main-color);
     }
 
-    .service:hover .technologies i{
+    .service:hover .technologies i {
         padding: 1rem;
     }
 
@@ -1409,7 +1388,7 @@ footer {
     }
 
     .project-overlay p {
-        font-size: .9rem;
+        font-size: 0.9rem;
     }
 
     /* Contact */
@@ -1425,7 +1404,7 @@ footer {
     .copyright,
     .copyright a,
     .copyright i {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .to-top i {
@@ -1433,8 +1412,12 @@ footer {
     }
 }
 
-
 @media all and (max-width: 428px) {
+
+    /* Home */
+    .home-content {
+        font-size: .8rem;
+    }
 
     /* Common */
     .sectionHeader h2 {
@@ -1458,7 +1441,7 @@ footer {
 
     /* Footer */
     .footer-container {
-        gap: .5rem;
+        gap: 0.5rem;
     }
 }
 
@@ -1492,7 +1475,7 @@ footer {
     }
 
     /* About */
-    .about-image img{
+    .about-image img {
         width: 200px;
         height: 300px;
     }
@@ -1514,12 +1497,11 @@ footer {
 
     .project-overlay h4 {
         font-size: 1.2rem;
-        padding: .6rem .2rem;
+        padding: 0.6rem 0.2rem;
     }
 
     /* Footer */
-    .footer-container{
-        gap: .1rem;
+    .footer-container {
+        gap: 0.1rem;
     }
-
 }

@@ -15,29 +15,37 @@ let darkModeIcon = document.querySelector('#theme-icon');
 darkModeIcon.addEventListener('click', () => {
 
     darkModeIcon.classList.toggle('bx-sun');
-    
+
     document.body.classList.toggle('dark_mode');
 });
 
 // Typewriter Effect
-new Typed('.typewriter', {
-    strings: ["Daniel Githiomi"],
+new Typed('.fname', {
+    strings: ["Daniel"],
     typeSpeed: 110,
     backSpeed: 90,
     loop: false
 });
 
+new Typed('.lname', {
+    strings: ["Githiomi"],
+    typeSpeed: 110,
+    backSpeed: 90,
+    loop: false
+});
+
+
 // Scroll Reveal
-const scroll_reveal = ScrollReveal ({
+const scroll_reveal = ScrollReveal({
     reset: true,
     distance: '100px',
     duration: 2000,
     delay: 10
 });
 
-scroll_reveal.reveal('.sectionHeader h2', {origin: 'top'});
-scroll_reveal.reveal('.home-content', {origin: 'left'});
-scroll_reveal.reveal('.socials, .cv', {origin: 'right'});
+scroll_reveal.reveal('.sectionHeader h2', { origin: 'top' });
+scroll_reveal.reveal('.home-content', { origin: 'left' });
+scroll_reveal.reveal('.socials, .cv', { origin: 'right' });
 
 // Change navbar accordiong to sections
 let sections = document.querySelectorAll('section');
@@ -91,5 +99,5 @@ submit_btn.addEventListener('click', (e) => {
     }
 
     e.preventDefault();
-    
+
 });
