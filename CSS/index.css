@@ -286,8 +286,7 @@ section {
     max-width: 45%;
 }
 
-.fname,
-.lname {
+.typewriter {
     font-size: 5rem;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
@@ -1379,6 +1378,10 @@ footer {
     }
 
     /* Portfolio */
+    .portfolio-project {
+        height: 200px;
+    }
+
     .portfolio-content {
         grid-template-columns: 1fr;
     }
@@ -1416,7 +1419,11 @@ footer {
 
     /* Home */
     .home-content {
-        font-size: .8rem;
+        font-size: .6rem;
+    }
+
+    .typewriter {
+        font-size: 3rem;
     }
 
     /* Common */
@@ -1449,7 +1456,7 @@ footer {
 
     /* Common */
     html {
-        font-size: 90%;
+        font-size: 85%;
     }
 
     .sectionHeader h2 {
