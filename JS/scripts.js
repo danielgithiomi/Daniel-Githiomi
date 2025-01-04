@@ -49,7 +49,7 @@ scroll_reveal.reveal('.socials, .cv', { origin: 'right' });
 
 // Change navbar accordiong to sections
 let sections = document.querySelectorAll('section');
-let links = document.querySelectorAll('.navigation li');
+let links = document.querySelectorAll('.navigation li a');
 
 // Add a sticky navigation bar
 window.onscroll = () => {
