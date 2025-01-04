@@ -75,6 +75,7 @@ window.onscroll = () => {
 
             links.forEach(link => {
                 link.classList.remove('active');
+                console.log("removed active");
                 document.querySelector('.navigation li a[href*=' + sectionId + ']').classList.add('active');
             });
 
