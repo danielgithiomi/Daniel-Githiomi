@@ -442,8 +442,15 @@ section {
 }
 
 .headerImg {
+    position: absolute;
     z-index: 100;
-    position: relative;
+    right: 8%;
+    top: 30%
+}
+
+.headerImg img {
+    width: 550px;
+    height: 500px;
 }
 
 .skills {
@@ -935,6 +942,16 @@ footer {
         right: -15%;
     }
 
+    .headerImg {
+        right: -3%;
+        top: 35%;
+    }
+
+    .headerImg img {
+        width: 400px;
+        height: 350px;
+    }
+
     /* Services */
     .service-details {
         padding: 1rem 0.3rem;
@@ -1139,6 +1156,10 @@ footer {
     /* Feature */
     .professional-content {
         right: -15%;
+    }
+
+    .headerImg {
+        display: none;
     }
 
     .skill i {
