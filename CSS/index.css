@@ -296,6 +296,7 @@ section {
 
 .bio {
     font-size: 1.2rem;
+    margin-right: 10rem;
     color: var(--text-color);
 }
 
@@ -565,12 +566,14 @@ section {
 
 .about-content h3 {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .about-content p {
     cursor: pointer;
     margin: 2rem auto;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .about-content p:hover {
@@ -1096,6 +1099,7 @@ footer {
 
     .bio {
         font-size: 1rem;
+        margin-right: 3rem;
     }
 
     .socials .bx {
@@ -1271,6 +1275,7 @@ footer {
 
     .bio {
         font-size: 0.9rem;
+        margin-right: 0;
     }
 
     /* Professional */
