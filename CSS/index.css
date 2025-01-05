@@ -441,6 +441,11 @@ section {
     overflow: hidden;
 }
 
+.headerImg {
+    z-index: 100;
+    position: relative;
+}
+
 .skills {
     position: absolute;
     top: 0;
