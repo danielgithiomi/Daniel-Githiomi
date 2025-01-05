@@ -144,9 +144,9 @@ section {
     font-size: 3rem;
     text-align: center;
     /* Section code to make text have a gradient */
-    background: linear-gradient(90deg, #016738, var(--main-color));
+    /* background: linear-gradient(90deg, #016738, var(--main-color));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 
 .headerSpan {
@@ -443,7 +443,7 @@ section {
 
 .headerImg {
     position: absolute;
-    z-index: 100;
+    z-index: 9;
     right: 8%;
     top: 30%
 }
