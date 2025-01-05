@@ -144,9 +144,9 @@ section {
     font-size: 3rem;
     text-align: center;
     /* Section code to make text have a gradient */
-    /* background: linear-gradient(90deg, #016738, var(--main-color));
+    background: linear-gradient(90deg, #016738, var(--main-color));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
 }
 
 .headerSpan {
@@ -881,10 +881,29 @@ footer {
 
 /* --- RESPONSIVENESS --- */
 /* Header Spin*/
-@media all and (max-width: 1700px) {
+@media all and (min-width: 1700px) {
     .home-content {
         max-width: 60%;
     }
+
+    .header {
+        padding: 1rem 10%;
+    }
+
+    section {
+        padding: 8rem 13% 0 13%;
+    }
+
+    .overlay {
+        top: 0;
+        right: 0;
+    }
+
+    .skills {
+        top: 6%;
+        right: 5%;
+    }
+
 }
 
 @media all and (max-width: 1455px) {
