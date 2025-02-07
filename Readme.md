@@ -30,7 +30,6 @@ This portfolio was made entirely using Visual Studio Code using the following te
 * CSS
 * Bootstrap
 * Javascript
-* JQuery
 
 ## KNOWN BUGS
 
@@ -40,7 +39,7 @@ __Slow internet connection can result in faulty rendering of animations__
 
 ## LIVE PAGES
 
-[Click-Here](https://githiomi.github.io/new-portfolio/) to view GitHub's live pages version of my portfolio.
+[Click-Here](https://danielgithiomi.com) to view my live portfolio website.
 
 ## SETUP INSTRUCTIONS
 
@@ -66,4 +65,4 @@ Contact me through any of the following channels:
 
 Click the following to access my license page: [Click-Here](https://githiomi.github.io/Privacy-Policy/)
 
-> Copyright (c) {2023} DhosioLux.
+> Copyright (c) {2025} DhosioLux.
