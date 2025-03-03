@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dafe07c2-6efc-48f5-9fce-198e77e5fe2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Images/Neoflix.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="dafe07c2-6efc-48f5-9fce-198e77e5fe2e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738958128724</updated>
-      <workItem from="1738958130128" duration="674000" />
+      <workItem from="1738958130128" duration="972000" />
     </task>
     <servers />
   </component>
