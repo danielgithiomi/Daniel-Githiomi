@@ -88,15 +88,26 @@ const submit_btn = document.getElementById('form_submit_btn');
 
 submit_btn.addEventListener('click', (e) => {
 
-    let first_name = document.getElementById('first_name').value;
-    let last_name = document.getElementById('last_name').value;
-    let email = document.getElementById('email_address').value;
+    let first_name_element = document.getElementById('first_name');
+    let last_name_element = document.getElementById('last_name');
+    let email_element = document.getElementById('email_address');
+    let user_message_element = document.getElementById('user_message');
+
+    let first_name = first_name_element.value;
+    let last_name = last_name_element.value;
+    let email = email_element.value;
 
     let username = first_name + ' ' + last_name;
 
     if (first_name !== '' || last_name !== '') {
         alert(`Hello ${username}, \nI appreciate you getting in touch with me. \nI will reach out via ${email} as soon as I can.\n\nIf very urgent, please contact me at: danielgithiomi@gmail.com`)
     }
+
+    // Clear the inputs
+    first_name_element.value = '';
+    last_name_element.value = '';
+    email_element.value = '';
+    user_message_element.value = '';
 
     e.preventDefault();
 
