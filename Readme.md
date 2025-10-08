@@ -10,7 +10,7 @@ This is the repository that holds my personal portfolio as a software developer 
 
 ## PREVIEW
 
-![Portfolio Preview](Assets/Images/Screenshot.png)
+![Portfolio Preview](Assets/Images/UpdatedScreenshot.png)
 
 ## SYSTEM REQUIREMENTS
 
