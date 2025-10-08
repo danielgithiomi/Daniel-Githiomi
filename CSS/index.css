@@ -562,17 +562,21 @@ section {
 }
 
 .about-image {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .about-image img {
+  max-width: 400px;
+  max-height: 600px;
   border-radius: 30%;
   padding: 3rem 0.5rem;
 }
 
 .about-content {
+  flex: 1;
   padding: 0rem 8%;
 }
 
@@ -1324,6 +1328,15 @@ footer {
   }
 
   /* About */
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-image img {
+    width: 250px;
+    height: 450px;
+  }
+
   .about-content p {
     font-size: 0.8rem;
   }
