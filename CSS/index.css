@@ -444,8 +444,8 @@ section {
 .headerImg {
   position: absolute;
   z-index: 9;
-  right: 9%;
-  top: 8%;
+  right: 10%;
+  top: 5%;
 }
 
 .headerImg img {
