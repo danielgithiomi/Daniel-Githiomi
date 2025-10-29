@@ -445,20 +445,21 @@ section {
   position: absolute;
   z-index: 9;
   right: 10%;
-  top: 5%;
+  top: 10%;
+  height: 80vh;
 }
 
 .headerImg img {
-  width: 500px;
-  height: 750px;
+  width: 100%;
+  height: 100%;
 }
 
 .skills {
   position: absolute;
   top: 0;
   right: 0;
-  width: 800px;
-  height: 800px;
+  width: 80vh;
+  height: 90vh;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -509,7 +510,7 @@ section {
 .skill i {
   font-size: 2rem;
   text-align: center;
-  margin-right: 20px;
+  margin-right: 25px;
   color: var(--main-color);
 }
 
@@ -540,10 +541,10 @@ section {
   position: absolute;
   top: -6%;
   right: -10%;
-  border-top: 450px solid var(--main-color);
-  border-right: 450px solid var(--main-color);
-  border-bottom: 450px solid var(--main-color);
-  border-left: 450px solid var(--transparent);
+  border-top: 50vh solid var(--main-color);
+  border-right: 50vh solid var(--main-color);
+  border-bottom: 50vh solid var(--main-color);
+  border-left: 50vh solid var(--transparent);
 }
 
 /* About Section */
