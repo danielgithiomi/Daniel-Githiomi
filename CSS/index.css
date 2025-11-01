@@ -288,10 +288,14 @@ section {
 
 .typewriter {
   font-size: 5rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.4rem;
   text-transform: uppercase;
   font-family: "Love Ya Like A Sister", sans-serif;
   color: var(--main-color);
+}
+
+.lname {
+  margin-top: -5%;
 }
 
 .bio {
@@ -458,8 +462,8 @@ section {
   position: absolute;
   top: 0;
   right: 0;
-  width: 80vh;
-  height: 90vh;
+  width: 100vh;
+  height: 100vh;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -502,7 +506,7 @@ section {
   flex-direction: column;
   color: var(--text-color);
   transform: rotate(calc(360deg / 4 * var(--index)));
-  transform-origin: 400px;
+  transform-origin: 50vh;
   text-align: center;
   background-color: var(--background-color);
 }
@@ -514,12 +518,16 @@ section {
   color: var(--main-color);
 }
 
-.skills .skill:nth-child(2) i {
-  margin-right: 70px;
+.skills .skill:nth-child(1) i {
+  margin-right: 50px;
 }
 
-.skills .skill:nth-child(3) i {
-  margin-right: -5px;
+.skills .skill:nth-child(2) i {
+  margin-right: 100px;
+}
+
+.skills .skill:nth-child(4) i {
+  margin-right: 50px;
 }
 
 .skill h3 {
@@ -530,8 +538,8 @@ section {
 }
 
 .circle {
-  width: 600px;
-  height: 600px;
+  width: 80vh;
+  height: 80vh;
   border-radius: 50%;
   border: 5px solid var(--main-color);
   z-index: -1;
@@ -541,10 +549,10 @@ section {
   position: absolute;
   top: -6%;
   right: -10%;
-  border-top: 50vh solid var(--main-color);
-  border-right: 50vh solid var(--main-color);
-  border-bottom: 50vh solid var(--main-color);
-  border-left: 50vh solid var(--transparent);
+  border-top: 55vh solid var(--main-color);
+  border-right: 55vh solid var(--main-color);
+  border-bottom: 55vh solid var(--main-color);
+  border-left: 55vh solid var(--transparent);
 }
 
 /* About Section */
