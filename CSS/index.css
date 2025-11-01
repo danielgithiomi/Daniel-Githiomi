@@ -732,8 +732,8 @@ section {
 }
 
 .portfolio-project:hover img {
-  transform: scale(1.1);
-  transition: transform 0.4s ease-in-out;
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
   opacity: 0.2;
 }
 
