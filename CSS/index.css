@@ -295,7 +295,7 @@ section {
 }
 
 .lname {
-  margin-top: -5%;
+  margin-top: -2.5%;
 }
 
 .bio {
@@ -339,11 +339,11 @@ section {
   left: -18%;
   z-index: 10;
   content: "";
-  background-color: var(--main-color);
   padding: 0.2rem 0.3rem;
   border-radius: 0.5rem;
-  color: #1e1e1e;
+  color: var(--text-color);
   transition: all 0.3s ease-in-out;
+  background-color: var(--main-color);
 }
 
 .socials a::after {
@@ -352,11 +352,11 @@ section {
   content: "";
   top: 15%;
   left: 34%;
+  transition: all 0.3s ease-in-out;
   border-top: 8px solid var(--main-color);
   border-right: 8px solid var(--transparent);
   border-bottom: 8px solid var(--transparent);
   border-left: 8px solid var(--transparent);
-  transition: all 0.3s ease-in-out;
 }
 
 .socials a:nth-child(1)::before {
@@ -436,13 +436,15 @@ section {
 /* Profesional Skills Section */
 .professional-content {
   position: absolute;
-  top: 50%;
+  top: 0;
   right: 0;
-  transform: translateY(-50%);
-  width: 60%;
+  width: 50%;
   height: 100vh;
-  pointer-events: none;
   overflow: hidden;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .headerImg {
@@ -459,13 +461,10 @@ section {
 }
 
 .skills {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100vh;
-  height: 100vh;
-  border-radius: 50%;
+  width: 80vh;
+  height: 80vh;
   display: flex;
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
   animation: skills-rotate 15s infinite ease-in-out;
@@ -499,6 +498,7 @@ section {
 
 .skill {
   position: absolute;
+  top: 0;
   left: 0;
   padding: 1.5rem 0;
   display: flex;
@@ -539,20 +539,20 @@ section {
 
 .circle {
   width: 80vh;
+  z-index: -1;
   height: 80vh;
   border-radius: 50%;
   border: 5px solid var(--main-color);
-  z-index: -1;
 }
 
 .overlay {
   position: absolute;
   top: -6%;
-  right: -10%;
-  border-top: 55vh solid var(--main-color);
-  border-right: 55vh solid var(--main-color);
-  border-bottom: 55vh solid var(--main-color);
-  border-left: 55vh solid var(--transparent);
+  right: 0;
+  border-top: 50vh solid var(--main-color);
+  border-right: 50vh solid var(--main-color);
+  border-bottom: 50vh solid var(--main-color);
+  border-left: 35vh solid var(--transparent);
 }
 
 /* About Section */
