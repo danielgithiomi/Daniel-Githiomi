@@ -543,7 +543,7 @@ section {
   border-top: 50vh solid var(--main-color);
   border-right: 50vh solid var(--main-color);
   border-bottom: 50vh solid var(--main-color);
-  border-left: 40vh solid var(--transparent);
+  border-left: 50vh solid var(--transparent);
 }
 
 /* About Section */
@@ -931,14 +931,6 @@ footer {
     font-size: 3.5rem;
   }
 
-  .navigation li:nth-child(1) a {
-    color: var(--main-color);
-  }
-
-  .navigation li a.active::after {
-    background-color: var(--main-color);
-  }
-
   /* Professional */
   .professional-content {
     right: -15%;
@@ -1167,9 +1159,9 @@ footer {
   }
 
   .overlay {
-    top: -20%;
-    border-top: 550px solid var(--main-color);
-    border-bottom: 550px solid var(--main-color);
+    border-top: 50vh solid var(--main-color);
+    border-bottom: 50vh solid var(--main-color);
+    border-left: 50vh solid var(--transparent);
   }
 
   .overlay,
