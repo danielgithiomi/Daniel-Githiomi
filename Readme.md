@@ -20,7 +20,7 @@ This is the repository that holds my personal portfolio as a software developer 
 
 ## COMPATIBILITY
 
-Compatible with all browsers including Safari and Internet Explorer making sure it is responsive.
+Compatible with all browsers, including Safari and Internet Explorer, making sure it is responsive.
 
 ## TECHNOLOGIES USED
 
@@ -44,7 +44,7 @@ __Slow internet connection can result in faulty rendering of animations__
 ## SETUP INSTRUCTIONS
 
 * Git clone [this](https://www.github.com/Daniel-Githiomi) into your terminal.  
-* Open the folder in your favourite editor, for example vscode, using the following syntax:
+* Open the folder in your favourite editor, for example, vscode, using the following syntax:
 
 ``` (Javasript)
 code .
