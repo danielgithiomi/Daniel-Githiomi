@@ -15,14 +15,14 @@ const setTheme = (theme) => localStorage.setItem(THEME_STORAGE_KEY, theme);
 
 const toggleLightMode = () => {
     document.body.classList.remove('dark_mode'),
-    themeToggleIcon.classList.remove('bx-sum'),
+    themeToggleIcon.classList.remove('bx-sun'),
     themeToggleIcon.classList.add('bx-moon')
 }
 
 const toggleDarkMode = () => {
     document.body.classList.add("dark_mode"),
     themeToggleIcon.classList.remove('bx-moon'),
-    themeToggleIcon.classList.add('bx-sum')
+    themeToggleIcon.classList.add('bx-sun')
 }
 
 const loadTheme = () => {
