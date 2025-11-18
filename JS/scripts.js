@@ -20,8 +20,16 @@ const loadTheme = () => {
     const theme = savedTheme || 'light';
 
     theme === 'light'
-        ? document.body.classList.remove('dark_mode')
-        : document.body.classList.add("dark_mode")
+        ? (
+            document.body.classList.remove('dark_mode'),
+            themeToggleIcon.classList.remove('bx-moon'),
+            themeToggleIcon.classList.add('bx-sun')
+        )
+        : (
+            document.body.classList.add("dark_mode"),
+            themeToggleIcon.classList.remove('bx-sun'),
+            themeToggleIcon.classList.add('bx-moon')
+        )
 }
 loadTheme();
 
