@@ -3,49 +3,80 @@ const hamburger = document.querySelector('.hamburger i');
 const navigation = document.querySelector('.navigation');
 
 hamburger.addEventListener('click', () => {
-
     hamburger.classList.toggle('bx-x');
     navigation.classList.toggle('show');
-
 });
 
 // Theme Toggle
-let darkModeIcon = document.querySelector('#theme-icon');
+const THEME_STORAGE_KEY = "theme";
+const themeToggleIcon = document.querySelector('#theme-icon');
+const getTheme = () => localStorage.getItem(THEME_STORAGE_KEY);
+const setTheme = (theme) => localStorage.setItem(THEME_STORAGE_KEY, theme);
 
-darkModeIcon.addEventListener('click', () => {
+const loadTheme = () => {
+    const savedTheme = getTheme();
 
-    darkModeIcon.classList.toggle('bx-sun');
+    if (!savedTheme) setTheme('light');
+    const theme = savedTheme || 'light';
 
-    document.body.classList.toggle('dark_mode');
-});
+    theme === 'light'
+        ? document.body.classList.remove('dark_mode')
+        : document.body.classList.add("dark_mode")
+}
+loadTheme();
+
+const toggleTheme = () => {
+    const savedTheme = getTheme();
+    const nextTheme = savedTheme == 'light' ? 'dark' : 'light';
+
+    switch (nextTheme){
+        case 'light':
+            setTheme('light');
+            themeToggleIcon.classList.remove('bx-sun');
+            themeToggleIcon.classList.add('bx-moon');
+            document.body.classList.remove('dark_mode');
+            break;
+        case 'dark':
+            setTheme('dark')
+            themeToggleIcon.classList.remove('bx-moon');
+            themeToggleIcon.classList.add('bx-sun');
+            document.body.classList.add('dark_mode');
+            break;
+    }
+}
+
+themeToggleIcon.addEventListener('click', toggleTheme);
+//     () => {
+//     themeToggleIcon.classList.toggle('bx-sun');
+//     document.body.classList.toggle('dark_mode');
+// }
 
 // Typewriter Effect
 new Typed('.fname', {
-    strings: ["Daniel"],
-    typeSpeed: 110,
+    loop: false,
     backSpeed: 90,
-    loop: false
+    typeSpeed: 110,
+    strings: ["Daniel"],
 });
 
 new Typed('.lname', {
-    strings: ["Githiomi"],
-    typeSpeed: 110,
+    loop: false,
+    typeSpeed: 80,
     backSpeed: 90,
-    loop: false
+    strings: ["Githiomi"],
 });
-
 
 // Scroll Reveal
 const scroll_reveal = ScrollReveal({
+    delay: 10,
     reset: true,
-    distance: '100px',
     duration: 2000,
-    delay: 10
+    distance: '100px',
 });
 
-scroll_reveal.reveal('.sectionHeader h2', { origin: 'top' });
 scroll_reveal.reveal('.home-content', { origin: 'left' });
 scroll_reveal.reveal('.socials, .cv', { origin: 'right' });
+scroll_reveal.reveal('.sectionHeader h2', { origin: 'top' });
 
 // Change navbar accordiong to sections
 let sections = document.querySelectorAll('section');
@@ -53,10 +84,7 @@ let links = document.querySelectorAll('.navigation li a');
 
 // Add a sticky navigation bar
 window.onscroll = () => {
-
-    // Add a sticky navigation bar
     const header = document.querySelector('header');
-
     header.classList.toggle('sticky', window.scrollY > 50);
 
     // To remove navbar icon on select and scroll
@@ -77,10 +105,8 @@ window.onscroll = () => {
                 link.classList.remove('active');
                 document.querySelector('.navigation li a[href*=' + sectionId + ']').classList.add('active');
             });
-
         };
     });
-
 }
 
 // Motify the user that the message has been sent
