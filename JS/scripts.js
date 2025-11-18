@@ -46,10 +46,6 @@ const toggleTheme = () => {
 }
 
 themeToggleIcon.addEventListener('click', toggleTheme);
-//     () => {
-//     themeToggleIcon.classList.toggle('bx-sun');
-//     document.body.classList.toggle('dark_mode');
-// }
 
 // Typewriter Effect
 new Typed('.fname', {
